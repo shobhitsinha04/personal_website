@@ -1,0 +1,54 @@
+.experience {
+    padding: 2rem 0;
+  }
+  
+  .experience__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .experience__list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .experience__item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .experience__item:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  .experience__role {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .experience__company {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .experience__description {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .experience__description li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
