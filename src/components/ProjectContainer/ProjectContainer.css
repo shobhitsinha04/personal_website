@@ -1,3 +1,4 @@
+/*
 .project {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -16,8 +17,8 @@
 .project__description {
   margin-top: 1rem;
   padding-left: 1.5rem;
-  list-style-type: disc; /* to match the experience section */
-  text-align: left; /* aligns description bullet points to the left */
+  list-style-type: disc; 
+  text-align: left; 
 }
 
 .project__stack {
@@ -31,9 +32,11 @@
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: #333; /* matching color */
+  color: #333;
 }
 
 .project .link--icon {
   margin-left: 0.5em;
 }
+
+*/
