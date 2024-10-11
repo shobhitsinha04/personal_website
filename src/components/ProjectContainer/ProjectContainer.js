@@ -7,7 +7,16 @@ const ProjectContainer = ({ project }) => (
   <div className='project'>
     <h3>{project.name}</h3>
 
-    <p className='project__description'>{project.description}</p>
+    {/* Display description as bullet points */}
+    {project.description && (
+      <ul className='project__description'>
+        {project.description.map((desc, idx) => (
+          <li key={idx}>{desc}</li>
+        ))}
+      </ul>
+    )}
+
+    {/* Display tech stack */}
     {project.stack && (
       <ul className='project__stack'>
         {project.stack.map((item) => (
@@ -18,6 +27,7 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
+    {/* Links for source code and live preview */}
     {project.sourceCode && (
       <a
         href={project.sourceCode}
