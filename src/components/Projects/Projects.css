@@ -1,75 +1,7 @@
-.projects {
-  background-color: #ffffff; /* Set to a fixed light background */
-  color: #333; /* Dark text color */
-  padding: 2rem 0;
-}
-
-/* Style for the Projects title to match Experience title */
-.projects__title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333; /* Same color as Experience title */
-  text-align: left; /* Make the title left-aligned */
-  margin-bottom: 1.5rem;
-  text-transform: none; /* Remove uppercase styling */
-}
-
-.projects__list {
+.projects__grid {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.projects__item {
-  background-color: #f9f9f9; /* Explicitly set light background */
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Subtle shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-align: left; /* Ensure all project content is left-aligned */
-}
-
-.projects__item:hover {
-  transform: scale(1.02); /* Slight zoom effect */
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px; /* Enhanced shadow on hover */
-}
-
-/* Left-align project role, company, and description */
-.projects__role {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  text-align: left;
-}
-
-.projects__company {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 0.5rem;
-  text-align: left;
-}
-
-.projects__description {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  text-align: left; /* Ensure description is left-aligned */
-}
-
-.projects__description li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  color: #444; /* Same as experience section */
-  text-align: left;
-}
-
-/* Ensure that projects section is unaffected by dark mode */
-.projects__item,
-.projects__role,
-.projects__company,
-.projects__description li {
-  color: #333; /* Ensure text is dark */
-  background-color: #f9f9f9; /* Ensure background is light */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
 }
