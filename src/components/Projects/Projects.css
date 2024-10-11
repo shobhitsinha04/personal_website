@@ -1,33 +1,49 @@
+.projects {
+  padding: 2rem 0;
+}
+
+.projects__title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); /* Increased min-width for better spacing */
-  grid-gap: 2em; /* Keep the spacing between cards */
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2rem;
 }
 
-.projects__grid .project {
-  background-color: white;
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Optional: Shadow for a clean card look */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+.project__item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Subtle shadow like experience section */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.projects__grid .project:hover {
-  transform: translateY(-5px); /* Lift the card on hover */
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Enhanced shadow on hover */
+.project__item:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px; /* Enhanced shadow on hover */
 }
 
-.section__title {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 1.5rem; /* Adjust the title font size */
+.project__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
-@media (max-width: 768px) {
-  .projects__grid {
-    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); /* Adjust columns for smaller screens */
-    grid-gap: 1.5em; /* Reduce gap for smaller screens */
-  }
+.project__description {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.project__description li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #444;
 }

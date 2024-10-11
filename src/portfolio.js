@@ -8,7 +8,8 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Shobhit Sinha',
   description: [
-    'Hi, I\’m Shobhit, a Computer Engineering student with a focus on AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
+    'Hi, I\’m Shobhit, a Computer Engineering student specializing in AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
+    '\n',
     'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\’ve been working on.'
   ],
   resume: '/personal_website/public/resume.pdf',
