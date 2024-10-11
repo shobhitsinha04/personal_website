@@ -1,17 +1,23 @@
 .project {
-  padding: 2em;
-  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
 }
 
 .project:hover {
-  transform: translateY(-7px);
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
 }
 
 .project__description {
-  margin-top: 1em;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc; /* to match the experience section */
+  text-align: left; /* aligns description bullet points to the left */
 }
 
 .project__stack {
@@ -25,7 +31,7 @@
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+  color: #333; /* matching color */
 }
 
 .project .link--icon {
