@@ -1,4 +1,6 @@
 .projects {
+  background-color: #ffffff; /* Set this to a fixed light background */
+  color: #333; /* Make the text a dark color */
   padding: 2rem 0;
 }
 
