@@ -1,12 +1,12 @@
 .projects {
-  background-color: #ffffff !important; /* Force light background */
-  color: #333 !important; /* Force dark text */
+  background-color: #ffffff; /* Set this to a fixed light background */
+  color: #333; /* Make the text a dark color */
   padding: 2rem 0;
 }
 
 .projects__title {
   font-size: 2rem;
-  color: #333 !important; /* Force dark text */
+  color: #333; /* Explicitly set dark text color */
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .projects__item {
-  background-color: #f9f9f9 !important; /* Force light background */
+  background-color: #f9f9f9; /* Explicitly set light background */
   border: 1px solid #ddd;
   padding: 1.5rem;
   border-radius: 8px;
@@ -36,12 +36,12 @@
 .projects__role {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333 !important; /* Force dark text */
+  color: #333; /* Same dark color as experience section */
 }
 
 .projects__company {
   font-size: 1.2rem;
-  color: #666 !important; /* Force lighter text */
+  color: #666; /* Same lighter text color as experience section */
   margin-top: 0.5rem;
 }
 
@@ -53,7 +53,7 @@
 .projects__description li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
-  color: #444 !important; /* Force dark text */
+  color: #444; /* Same as experience section */
 }
 
 /* Override dark mode specifically for the projects section */
@@ -61,6 +61,6 @@
 .projects__role,
 .projects__company,
 .projects__description li {
-  color: #333 !important; /* Ensure text is always dark */
-  background-color: #f9f9f9 !important; /* Ensure background is always light */
+  color: #333; /* Ensure text is dark */
+  background-color: #f9f9f9; /* Ensure background is light */
 }
