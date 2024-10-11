@@ -9,40 +9,46 @@
   text-align: center;
 }
 
-.projects__grid {
+.projects__list {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.project__item {
+.projects__item {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Subtle shadow like experience section */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Added subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
-.project__item:hover {
-  transform: scale(1.02);
+.projects__item:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px; /* Enhanced shadow on hover */
 }
 
-.project__title {
+.projects__role {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
 
-.project__description {
+.projects__company {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.projects__description {
   margin-top: 1rem;
   padding-left: 1.5rem;
 }
 
-.project__description li {
+.projects__description li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
   color: #444;
