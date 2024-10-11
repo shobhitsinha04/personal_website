@@ -7,10 +7,11 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Shobhit Sinha',
-  role: 'Computer Engineer',
-  description:
-    'I am a junior at the University of Illinois Urbana-Champaign, pursuing a B.S. in Computer Engineering with a minor in Statistics. My interests and experience span AI, Machine Learning, Large Language Models, FPGA Development, NLP, and Embedded Systems. I have worked on projects involving generative models, LLM fine-tuning, and NLP applications focusing on innovation to solve real-world problems.',
-  resume: '/resume.pdf',
+  description: [
+    'Hi, I\’m Shobhit, a Computer Engineering student with a focus on AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
+    'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\’ve been working on.'
+  ],
+  resume: '/personal_website/public/resume.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
     github: 'https://github.com/shobhitsinha04',
@@ -42,8 +43,9 @@ const projects = [
   {
     name: 'Dynamic Reading Companion',
     description: [
-      'Engineered a full-stack platform utilizing OpenAI GPT for automated text summarization and sentiment analysis, processing over 1,000 words per chapter, and generating personalized Spotify playlists via seamless Gutendex API integration.',
-      'Optimized user experience by 30% through emotion-driven playlist adjustments, leveraging advanced NLP techniques to analyze mood transitions, and streamlined API integration (OpenAI, Spotify, Gutendex) for enhanced data processing efficiency.'
+      'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
+      'Optimized user experience by 30% through emotion-driven playlist adjustments.',
+      'Leveraging advanced NLP techniques to analyze mood transitions, and API integration (OpenAI, Spotify, Gutendex) for enhanced data processing efficiency.'
     ],
     stack: ['Python', 'Flask', 'OpenAI API', 'React', 'Spotify API'],
     sourceCode: 'https://github.com',
@@ -51,7 +53,8 @@ const projects = [
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
     description: [
-      'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book, and optimizing training with efficient weight loading and LoRA-based fine-tuning, reducing training time by 20%.',
+      'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book',
+      'Optimized training with efficient weight loading and LoRA-based methods, reducing training time by 20%.',
       'Developed a custom tokenizer leveraging GPT encoding, improving tokenization efficiency and boosting inference speed by 25%.',
       'Pretrained and optimized the model on instruction-based NLP tasks, achieving enhanced real-time text generation across multiple datasets.'
     ],
@@ -72,10 +75,10 @@ const projects = [
 {
   name: "Controlled Home Unit Transportation",
   description: [
-    "Designed an automated chair for the Controlled Home Unit Transportation project with ultrasonic sensors and custom logic, achieving 95% positioning accuracy.",
-    "Implemented transistor control with Boolean logic for multi-directional movement.",
-    "Enhanced sensor modules (infrared and reflective object sensors) with custom op-amp circuits for voltage amplification, achieving high accuracy in over 30 test scenarios.",
-    "Contributed to the chair\’s modeling at the Illinois MakerLab."
+    "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
+    "Implemented transistor control with Boolean logic to enable multi-directional movement.",
+    "Enhanced sensor modules (infrared and reflective object sensors) by designing op-amp circuits for voltage amplification.",
+    "Achieved high accuracy in over 30 test scenarios through sensor optimizations."
   ],
   stack: ["Circuit Design", "Transistor Control"],
 }

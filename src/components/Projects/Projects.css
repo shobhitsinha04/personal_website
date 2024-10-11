@@ -2,6 +2,32 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); /* Increased min-width for better spacing */
+  grid-gap: 2em; /* Keep the spacing between cards */
+}
+
+.projects__grid .project {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Optional: Shadow for a clean card look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.projects__grid .project:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Enhanced shadow on hover */
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5rem; /* Adjust the title font size */
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr)); /* Adjust columns for smaller screens */
+    grid-gap: 1.5em; /* Reduce gap for smaller screens */
+  }
 }
