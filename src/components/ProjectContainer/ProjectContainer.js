@@ -1,54 +1,54 @@
 
-// import uniqid from 'uniqid'
-// import GitHubIcon from '@material-ui/icons/GitHub'
-// import LaunchIcon from '@material-ui/icons/Launch'
-// import './ProjectContainer.css'
+import uniqid from 'uniqid'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LaunchIcon from '@material-ui/icons/Launch'
+import './ProjectContainer.css'
 
-// const ProjectContainer = ({ project }) => (
-//   <div className='project'>
-//     <h3>{project.name}</h3>
+const ProjectContainer = ({ project }) => (
+  <div className='project'>
+    <h3>{project.name}</h3>
 
-//     {/* Display description as bullet points */}
-//     {project.description && (
-//       <ul className='project__description'>
-//         {project.description.map((desc, idx) => (
-//           <li key={idx}>{desc}</li>
-//         ))}
-//       </ul>
-//     )}
+    {/* Display description as bullet points */}
+    {project.description && (
+      <ul className='project__description'>
+        {project.description.map((desc, idx) => (
+          <li key={idx}>{desc}</li>
+        ))}
+      </ul>
+    )}
 
-//     {/* Display tech stack */}
-//     {project.stack && (
-//       <ul className='project__stack'>
-//         {project.stack.map((item) => (
-//           <li key={uniqid()} className='project__stack-item'>
-//             {item}
-//           </li>
-//         ))}
-//       </ul>
-//     )}
+    {/* Display tech stack */}
+    {project.stack && (
+      <ul className='project__stack'>
+        {project.stack.map((item) => (
+          <li key={uniqid()} className='project__stack-item'>
+            {item}
+          </li>
+        ))}
+      </ul>
+    )}
 
-//     {/* Links for source code and live preview */}
-//     {project.sourceCode && (
-//       <a
-//         href={project.sourceCode}
-//         aria-label='source code'
-//         className='link link--icon'
-//       >
-//         <GitHubIcon />
-//       </a>
-//     )}
+    {/* Links for source code and live preview */}
+    {project.sourceCode && (
+      <a
+        href={project.sourceCode}
+        aria-label='source code'
+        className='link link--icon'
+      >
+        <GitHubIcon />
+      </a>
+    )}
 
-//     {project.livePreview && (
-//       <a
-//         href={project.livePreview}
-//         aria-label='live preview'
-//         className='link link--icon'
-//       >
-//         <LaunchIcon />
-//       </a>
-//     )}
-//   </div>
-// )
+    {project.livePreview && (
+      <a
+        href={project.livePreview}
+        aria-label='live preview'
+        className='link link--icon'
+      >
+        <LaunchIcon />
+      </a>
+    )}
+  </div>
+)
 
-// export default ProjectContainer
+export default ProjectContainer

@@ -1,55 +1,7 @@
-.projects {
-  padding: 2rem 0;
-}
-
-.projects__title {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.projects__list {
+.projects__grid {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.projects__item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Added subtle shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
-}
-
-.projects__item:hover {
-  transform: scale(1.02); /* Slight zoom effect on hover */
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px; /* Enhanced shadow on hover */
-}
-
-.projects__role {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.projects__company {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 0.5rem;
-}
-
-.projects__description {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-.projects__description li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  color: #444;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
 }
