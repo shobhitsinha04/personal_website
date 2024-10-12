@@ -25,7 +25,6 @@
 .project__stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align tech stack to the left */
   margin: 1.2em 0;
 }
 
@@ -37,7 +36,9 @@
 }
 
 .project .link--icon {
-  margin-left: 0.5em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .project h3 {
@@ -48,7 +49,7 @@
 
 .project__description {
   text-align: left; /* Left-aligns the project description text */
-  color: #333; /* Optional: ensures description text color */
+  color: #333 !important; /* Optional: ensures description text color */
   padding-left: 1rem; /* Optional: add some padding for bullet points */
 }
 

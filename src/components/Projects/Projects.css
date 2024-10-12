@@ -7,7 +7,9 @@
 }
 
 .project h3 {
-  color: #333; /* Change to your desired color */
+  color: #000; /* Change to your desired color */
+  font-weight: bold;
+  text-align: left; /* Keep the title left-aligned */
 }
 
 .project__description {
