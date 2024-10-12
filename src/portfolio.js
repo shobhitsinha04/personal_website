@@ -10,9 +10,10 @@ const about = {
   description: [
     'Hi, I\’m Shobhit, a Computer Engineering student specializing in AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
     <br />,
+    <br />,
     'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\’ve been working on.'
   ],
-  resume: '%PUBLIC_URL%/resume.pdf',
+  resume: 'https://github.com/shobhitsinha04/personal_website/blob/master/public/resume.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
     github: 'https://github.com/shobhitsinha04',
