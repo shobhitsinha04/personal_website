@@ -6,7 +6,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: left; /* Left-aligns the text */
-  color: #000; /* Changes text color to black */
+  color: #333; /* Changes text color to black */
   width: 100%; /* Makes the boxes wider */
   max-width: none; /* Removes any maximum width constraints */
 }
@@ -39,3 +39,15 @@
 .project .link--icon {
   margin-left: 0.5em;
 }
+
+.project h3 {
+  text-align: left; /* Left-aligns the project title */
+  color: #333; /* Optional: set the text color */
+}
+
+.project__description {
+  text-align: left; /* Left-aligns the project description text */
+  color: #333; /* Optional: ensures description text color */
+  padding-left: 1rem; /* Optional: add some padding for bullet points */
+}
+
