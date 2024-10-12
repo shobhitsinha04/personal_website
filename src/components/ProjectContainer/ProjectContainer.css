@@ -5,7 +5,10 @@
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-align: center;
+  text-align: left; /* Left-aligns the text */
+  color: #000; /* Changes text color to black */
+  width: 100%; /* Makes the boxes wider */
+  max-width: none; /* Removes any maximum width constraints */
 }
 
 .project:hover {
@@ -16,14 +19,13 @@
 .project__description {
   margin-top: 1rem;
   padding-left: 1.5rem;
-  list-style-type: disc; /* to match the experience section */
-  text-align: left; /* aligns description bullet points to the left */
+  list-style-type: disc;
 }
 
 .project__stack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; /* Align tech stack to the left */
   margin: 1.2em 0;
 }
 
@@ -31,7 +33,7 @@
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: #333; /* matching color */
+  color: #333;
 }
 
 .project .link--icon {

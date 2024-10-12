@@ -2,6 +2,7 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Displays 2 wider boxes per row */
   grid-gap: 2em;
+  justify-content: center; /* Centers the boxes horizontally */
 }
