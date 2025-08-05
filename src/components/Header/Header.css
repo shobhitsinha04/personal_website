@@ -1,9 +1,24 @@
+/* src/components/Header/Header.css */
 .header {
   height: 8em;
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+}
+
+.header__title {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.header__title:hover {
+  color: var(--clr-primary);
 }
 
 @media (max-width: 600px) {

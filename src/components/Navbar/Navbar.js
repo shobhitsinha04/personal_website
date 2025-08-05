@@ -1,17 +1,23 @@
+// src/components/Navbar/Navbar.js
 import { useContext, useState } from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { experience, publications, projects, certifications } from '../../portfolio'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ currentPage, setCurrentPage }) => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
+
+  const handleNavigation = (page) => {
+    setCurrentPage(page)
+    setShowNavList(false)
+  }
 
   return (
     <nav className='center nav'>
@@ -19,39 +25,47 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+        {experience.length ? (
+          <li className='nav__list-item'>
+            <button
+              onClick={() => handleNavigation('experience')}
+              className={`link link--nav ${currentPage === 'experience' ? 'link--active' : ''}`}
+            >
+              Experience
+            </button>
+          </li>
+        ) : null}
+
+        {publications.length ? (
+          <li className='nav__list-item'>
+            <button
+              onClick={() => handleNavigation('publications')}
+              className={`link link--nav ${currentPage === 'publications' ? 'link--active' : ''}`}
+            >
+              Publications
+            </button>
+          </li>
+        ) : null}
+
         {projects.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              onClick={() => handleNavigation('projects')}
+              className={`link link--nav ${currentPage === 'projects' ? 'link--active' : ''}`}
             >
               Projects
-            </a>
+            </button>
           </li>
         ) : null}
 
-        {skills.length ? (
+        {certifications.length ? (
           <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
+            <button
+              onClick={() => handleNavigation('certifications')}
+              className={`link link--nav ${currentPage === 'certifications' ? 'link--active' : ''}`}
             >
-              Skills
-            </a>
-          </li>
-        ) : null}
-
-        {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
-            </a>
+              Certifications
+            </button>
           </li>
         ) : null}
       </ul>

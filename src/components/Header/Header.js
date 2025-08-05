@@ -1,22 +1,29 @@
+// src/components/Header/Header.js
 import { header } from '../../portfolio'
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ currentPage, setCurrentPage }) => {
   const { homepage, title } = header
+
+  const handleHomeClick = () => {
+    setCurrentPage('home')
+  }
 
   return (
     <header className='header center'>
       <h3>
         {homepage ? (
-          <a href={homepage} className='link'>
+          <button onClick={handleHomeClick} className='link header__title'>
             {title}
-          </a>
+          </button>
         ) : (
-          title
+          <button onClick={handleHomeClick} className='header__title'>
+            {title}
+          </button>
         )}
       </h3>
-      <Navbar />
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </header>
   )
 }
