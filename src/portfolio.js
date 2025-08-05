@@ -76,7 +76,6 @@ const publications = [
       code: 'https://github.com/shobhitsinha04/TrajLLM'
     },
     status: 'Published',
-    note: '* denotes co-first authorship'
   }
 ]
 

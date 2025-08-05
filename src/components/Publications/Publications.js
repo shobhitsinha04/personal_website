@@ -17,13 +17,10 @@ const Publications = () => {
           <div key={uniqid()} className='publication__item'>
             <h3 className='publication__title'>{pub.title}</h3>
             <p className='publication__authors'>{pub.authors}</p>
+            <br />
             <p className='publication__venue'>
               {pub.venue} • {pub.location} • {pub.month} {pub.year}
             </p>
-            
-            {pub.note && (
-              <p className='publication__note'>{pub.note}</p>
-            )}
             
             {pub.description && (
               <ul className='publication__description'>
