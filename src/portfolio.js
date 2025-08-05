@@ -22,42 +22,62 @@ const about = {
 
 const experience = [
   {
-    name: 'AI Researcher on GenAI and LLMs',
-    company: 'University of New South Wales, Sydney, Australia',
+    name: 'Data Science and R&D Intern',
+    company: 'CCC Intelligent Solutions',
+    duration: 'July 2025 - Present',
+    location: 'Chicago, IL',
     description: [
-      'Secured a competitive research scholarship under Professor Flora Salim, to develop and publish multiple papers on a new generative AI agent structure that integrates personality and memory generation using LLMs such as GPT and LLAMA.',
-      'Utilized AI and Machine Learning tools (PyTorch, Transformers) to optimize predictive models by integrating real-world data.',
-      'Developed memory management algorithms and improved the contextual understanding and interaction efficiency of AI agents by leveraging spatial analysis and co-ordinate mapping.'
+      'Built a 3D reconstruction pipeline using Gaussian Splatting, Open3D, and Poisson Reconstruction.',
+      'Converted point clouds to 3D meshes with surface data for physics engine integration achieving 90% watertightness.',
+      'Enabled simulation-based data generation to train downstream ML models.'
     ],
-  }, 
+  },
   {
-    name: 'Software Team - Battery Management System Viewer',
-    company: 'Illinois Electric Motorsport',
+    name: 'Software Engineering Intern',
+    company: 'HERE Technologies',
+    duration: 'Jan. 2025 – May 2025',
+    location: 'Chicago, IL',
     description: [
-      'Collaborating on developing a real-time BMS Viewer for battery data visualization using CAN Bus communication.',
-      'Refactoring the user interface with PyQt, incorporating multithreading to enhance data rendering speed and responsiveness.',
-      'Implementing unit tests to ensure maintainability, scalability, and compliance with industry standards.'
+      'Engineered an AWS cloud-based ML pipeline to classify 10,000+ POIs using vector embeddings and LLMs.',
+      'Deployed a multi-prompt LLM framework using word embeddings to process large-scale data with 98% accuracy.',
+      'Tuned thresholds and prompt variants to boost classification accuracy by 6% while reducing latency.'
+    ]
+  },
+  {
+    name: 'AI Researcher',
+    company: 'University of New South Wales, Sydney',
+    duration: 'May 2024 - May 2025',
+    location: 'Sydney, Australia',
+    description: [
+      'Published a research paper as co-first author on a modular framework for LLM-based human trajectory simulation.',
+      'Implemented 1000+ agents with personality and memory generation, integrating GPT, Llama and custom algorithms.',
+      'Improved inference-driven agent interactions by 31% through spatial analysis and contextual understanding.'
     ]
   }
 ]
 
+
 const publications = [
   {
-    title: 'Generative AI Agents with Integrated Personality and Memory Systems',
-    authors: 'Shobhit Sinha, Flora Salim',
-    venue: 'Under Review - International Conference on AI Research',
+    title: 'TrajLLM: A Modular LLM-Enhanced Agent-Based Framework for Realistic Human Trajectory Simulation',
+    authors: 'Sinha, S.*, Ju, C.*, Liu, J.*, Xue, H., & Salim, F.',
+    venue: 'The 2025 ACM Web Conference (WWW \'25)',
+    location: 'Sydney, Australia',
     year: '2025',
+    month: 'April',
     description: [
-      'Novel approach to developing AI agents that integrate personality traits with advanced memory management.',
-      'Demonstrated improved contextual understanding and user interaction through spatial analysis techniques.',
-      'Achieved 30% improvement in response relevance compared to baseline LLM implementations.'
+      'Developed a novel modular framework combining Large Language Models with agent-based modeling for realistic human trajectory simulation.',
+      'Integrated personality and memory generation capabilities using GPT and Llama models with custom algorithms.',
+      'Achieved 31% improvement in inference-driven agent interactions through advanced spatial analysis and contextual understanding.',
+      'Demonstrated scalability with 1000+ simultaneous agents maintaining individual personalities and memory states.'
     ],
     links: {
-      paper: '#', // Add actual link when available
-      code: 'https://github.com/shobhitsinha04' // Add actual repo link
-    }
-  },
-  // Add more publications as needed
+      paper: '', // Update with actual link when available
+      code: 'https://github.com/shobhitsinha04' // Update with actual repo link
+    },
+    status: 'Published',
+    note: '* denotes co-first authorship'
+  }
 ]
 
 const projects = [
