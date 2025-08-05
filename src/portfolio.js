@@ -8,12 +8,13 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Shobhit Sinha',
   description: [
-    'Hi, I\'m Shobhit, a Computer Engineering student specializing in AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
+    'Hi, I\'m Shobhit — a Computer Engineering student at UIUC passionate about building intelligent, scalable systems that solve real-world problems.',
     <br />,
     <br />,
-    'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\'ve been working on.'
+    'My experience spans Machine Learning, Generative AI, LLM fine-tuning, and NLP. I enjoy building end-to-end AI solutions, from training models to deploying them in real-world applications where performance and usability matter.',
+    'I\'m always looking to build technology that\'s practical, efficient, and actually makes a difference. Feel free to explore my portfolio to see what I\'ve been working on.'
   ],
-  resume: 'https://github.com/shobhitsinha04/personal_website/blob/master/public/resume.pdf',
+  resume: 'https://drive.google.com/file/d/183VoJDwRaLPh9DrnK_41RzCcvE2vNXex/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
     github: 'https://github.com/shobhitsinha04',
