@@ -1,3 +1,4 @@
+// src/components/Experience/Experience.js
 import React from 'react';
 import uniqid from 'uniqid';
 import { experience } from '../../portfolio'; 
@@ -13,14 +14,16 @@ const Experience = () => {
         {experience.map((exp) => (
           <div key={uniqid()} className='experience__item'>
             <h3 className='experience__role'>{exp.name}</h3>
-            <h4 className='experience__company'>{exp.company}</h4>
-            <div className='experience__details'>
-              {exp.duration && (
-                <span className='experience__duration'>{exp.duration}</span>
-              )}
-              {exp.location && (
-                <span className='experience__location'> • {exp.location}</span>
-              )}
+            <div className='experience__header'>
+              <h4 className='experience__company'>{exp.company}</h4>
+              <div className='experience__details'>
+                {exp.duration && (
+                  <span className='experience__duration'>{exp.duration}</span>
+                )}
+                {exp.location && (
+                  <span className='experience__location'> • {exp.location}</span>
+                )}
+              </div>
             </div>
             <ul className='experience__description'>
               {exp.description.map((desc, idx) => (
