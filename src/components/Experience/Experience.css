@@ -1,37 +1,51 @@
+/* src/components/Experience/Experience.css - Updated to match Projects/Publications style */
 .experience {
-  max-width: var(--width-container);
-  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .experience__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .experience__item {
-  padding: 2em;
-  border-radius: 1em;
-  background: var(--clr-bg-alt);
-  box-shadow: var(--shadow);
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #333; 
+}
+
+.experience__item:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
 }
 
 .experience__role {
-  margin-bottom: 0.5em;
-  color: var(--clr-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .experience__company {
-  margin-bottom: 0.5em;
-  font-weight: 600;
-  color: var(--clr-fg);
+  font-size: 1.2rem;
+  color: #666; 
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .experience__details {
-  margin-bottom: 1.5em;
-  color: var(--clr-fg-alt);
+  margin-bottom: 1rem;
+  color: #666; 
   font-style: italic;
-  font-size: 0.95em;
+  font-size: 0.95rem;
 }
 
 .experience__duration {
@@ -39,26 +53,37 @@
 }
 
 .experience__location {
-  color: var(--clr-fg-alt);
+  color: #666;
 }
 
 .experience__description {
-  margin: 0;
-  padding-left: 1em;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #333; 
 }
 
 .experience__description li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   line-height: 1.6;
+  color: #444; 
 }
 
 /* Responsive design */
 @media (max-width: 600px) {
   .experience__item {
-    padding: 1.5em;
+    padding: 1.5rem;
   }
   
   .experience__details {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+  }
+  
+  .experience__role {
+    font-size: 1.3rem;
+  }
+  
+  .experience__company {
+    font-size: 1.1rem;
   }
 }
