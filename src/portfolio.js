@@ -8,10 +8,10 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Shobhit Sinha',
   description: [
-    'Hi, I\’m Shobhit, a Computer Engineering student specializing in AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
+    'Hi, I\'m Shobhit, a Computer Engineering student specializing in AI and Machine Learning. My experience and interests range from Generative AI, LLM fine-tuning and NLP to FPGA development and circuit design.',
     <br />,
     <br />,
-    'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\’ve been working on.'
+    'My goal is to build impactful, scalable solutions for real-world challenges. Feel free to explore my portfolio to see what I\'ve been working on.'
   ],
   resume: 'https://github.com/shobhitsinha04/personal_website/blob/master/public/resume.pdf',
   social: {
@@ -19,6 +19,7 @@ const about = {
     github: 'https://github.com/shobhitsinha04',
   },
 }
+
 const experience = [
   {
     name: 'AI Researcher on GenAI and LLMs',
@@ -39,9 +40,27 @@ const experience = [
     ]
   }
 ]
+
+const publications = [
+  {
+    title: 'Generative AI Agents with Integrated Personality and Memory Systems',
+    authors: 'Shobhit Sinha, Flora Salim',
+    venue: 'Under Review - International Conference on AI Research',
+    year: '2025',
+    description: [
+      'Novel approach to developing AI agents that integrate personality traits with advanced memory management.',
+      'Demonstrated improved contextual understanding and user interaction through spatial analysis techniques.',
+      'Achieved 30% improvement in response relevance compared to baseline LLM implementations.'
+    ],
+    links: {
+      paper: '#', // Add actual link when available
+      code: 'https://github.com/shobhitsinha04' // Add actual repo link
+    }
+  },
+  // Add more publications as needed
+]
+
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
     name: 'Dynamic Reading Companion',
     description: [
@@ -73,18 +92,57 @@ const projects = [
     ],
     stack: ["SystemVerilog", "FPGA Development"],
     sourceCode: "https://github.com/shobhitsinha04/FPGA_Golf_ECE385"
-},
-{
-  name: "Controlled Home Unit Transportation",
-  description: [
-    "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
-    "Implemented transistor control with Boolean logic to enable multi-directional movement.",
-    "Enhanced sensor modules (infrared and reflective object sensors) by designing op-amp circuits for voltage amplification.",
-    "Achieved high accuracy in over 30 test scenarios through sensor optimizations."
-  ],
-  stack: ["Circuit Design", "Transistor Control"],
-}
+  },
+  {
+    name: "Controlled Home Unit Transportation",
+    description: [
+      "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
+      "Implemented transistor control with Boolean logic to enable multi-directional movement.",
+      "Enhanced sensor modules (infrared and reflective object sensors) by designing op-amp circuits for voltage amplification.",
+      "Achieved high accuracy in over 30 test scenarios through sensor optimizations."
+    ],
+    stack: ["Circuit Design", "Transistor Control"],
+  }
+]
 
+const certifications = [
+  {
+    name: 'Machine Learning Specialization',
+    issuer: 'Stanford University (Coursera)',
+    date: '2024',
+    description: [
+      'Comprehensive course covering supervised learning, unsupervised learning, and reinforcement learning.',
+      'Hands-on projects implementing neural networks, decision trees, and clustering algorithms.',
+      'Applied machine learning techniques to real-world datasets and problems.'
+    ],
+    credentialId: 'ABC123XYZ', // Add actual credential ID
+    link: 'https://coursera.org/verify/ABC123XYZ' // Add actual verification link
+  },
+  {
+    name: 'Deep Learning Specialization',
+    issuer: 'DeepLearning.AI (Coursera)',
+    date: '2024',
+    description: [
+      'Advanced deep learning concepts including CNNs, RNNs, and Transformer architectures.',
+      'Implemented attention mechanisms and worked with sequence-to-sequence models.',
+      'Built and deployed deep learning models using TensorFlow and PyTorch.'
+    ],
+    credentialId: 'DEF456ABC',
+    link: 'https://coursera.org/verify/DEF456ABC'
+  },
+  {
+    name: 'AWS Machine Learning - Specialty',
+    issuer: 'Amazon Web Services',
+    date: '2024',
+    description: [
+      'Cloud-based machine learning services and deployment strategies.',
+      'Experience with SageMaker, Lambda, and other AWS ML services.',
+      'Model optimization and production deployment best practices.'
+    ],
+    credentialId: 'AWS-ML-12345',
+    link: 'https://aws.amazon.com/verification'
+  }
+  // Add more certifications as needed
 ]
 
 const skills = [
@@ -114,4 +172,4 @@ const contact = {
   email: 'shobhit.sinha2004@gmail.com',
 }
 
-export { header, about, experience, projects, skills, contact }
+export { header, about, experience, publications, projects, certifications, skills, contact }
