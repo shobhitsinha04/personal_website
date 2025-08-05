@@ -1,12 +1,12 @@
-// src/App.js
+// src/App.js - Make sure all components are imported
 import { useContext, useState } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
-import Publications from './components/Publications/Publications'
+import Publications from './components/Publications/Publications' // Make sure this import exists
 import Projects from './components/Projects/Projects'
-import Certifications from './components/Certifications/Certifications'
+import Certifications from './components/Certifications/Certifications' // Make sure this import exists
 import Skills from './components/Skills/Skills'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
