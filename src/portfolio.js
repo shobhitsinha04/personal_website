@@ -1,11 +1,9 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: 'https://shobhitsinha04.github.io/personal_website',
   title: 'SS.',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: 'Shobhit Sinha',
   description: [
     'Hi, I\'m Shobhit,  a Computer Engineering student at UIUC passionate about building intelligent, scalable systems that solve real-world problems.',
