@@ -83,14 +83,13 @@ const publications = [
 
 const projects = [
   {
-    name: 'Dynamic Reading Companion',
+    name: 'Driver Fatigue Detection System',
     description: [
-      'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
-      'Optimized user experience by 30% through emotion-driven playlist adjustments.',
-      'Leveraging advanced NLP techniques to analyze mood transitions, and API integration (OpenAI, Spotify, Gutendex) for enhanced data processing efficiency.'
+      'Built a real-time fatigue detection system using Python, OpenCV, and MTCNN, aiming for 90% accuracy.',
+      'Trained a custom Deep Learning model in PyTorch for fatigue detection, improving prediction reliability.',
+      'Designed a computer vision pipeline to improve real-time detection speed and efficiency'
     ],
-    stack: ['Python', 'Flask', 'OpenAI API', 'React', 'Spotify API'],
-    sourceCode: 'https://github.com',
+    stack: ['OpenCV', 'Deep Learning', 'PyTorch']
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
@@ -102,6 +101,43 @@ const projects = [
     ],
     stack: ['Python', 'PyTorch', 'LLMs'],
     sourceCode: 'https://github.com/shobhitsinha04/Building_LLM',
+  },
+  {
+    name: 'DocuMine – AI Chrome Extension for Research',
+    description: [
+      'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
+      'Processed 200+ documents, embedding 10,000+ chunks into ChromaDB, boosting retrieval speed by 35%.',
+      'Developed a Flask-based query server for file uploads and chatbot interactions with an LLM.'
+    ],
+    stack: ['LLMs', 'RAG', 'Python', 'Flask', 'ChromaDB'],
+  },
+  {
+    name: 'HealthConnect | Integrated Health Management App',
+    description: [
+      'Deployed a scalable health management platform on GCP, handling 50M+ records through NHANES and Fitbit.',
+      'Streamlined 20+ secure Node.js API endpoints for real-time interaction, supporting 3,000+ daily users.',
+      'Delivered a data-driven alert system that detected early health risks in 85% of flagged cases.'
+    ],
+    stack: ['SQL', 'GCP', 'DBMS'],
+  },
+  {
+    name: 'Sentiment Analysis on Social Media and Reviews',
+    description: [
+      'Conducted sentiment analysis on Amazon reviews and Tweets achieving over 85% accuracy with DeepLearning (BERT).',
+      'Applied NLP preprocessing techniques, including tokenization and embedding, to improve model performance.',
+      'Utilized Matplotlib for data visualization to identify patterns and trends in the sentiment data.'
+    ],
+    stack: ['Python', 'NLP', 'Deep Learning'],
+  },
+  {
+    name: 'Dynamic Reading Companion',
+    description: [
+      'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
+      'Optimized user experience by 30% through emotion-driven playlist adjustments.',
+      'Leveraging advanced NLP techniques to analyze mood transitions, and API integration (OpenAI, Spotify, Gutendex) for enhanced data processing efficiency.'
+    ],
+    stack: ['Python', 'Flask', 'OpenAI API', 'React', 'Spotify API'],
+    sourceCode: 'https://github.com',
   },
   {
     name: "FPGA Golf Game",
