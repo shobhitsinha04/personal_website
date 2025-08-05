@@ -1,61 +1,73 @@
-// src/components/Publications/Publications.js
-import React from 'react';
-import uniqid from 'uniqid';
-import { publications } from '../../portfolio';
-import LaunchIcon from '@material-ui/icons/Launch';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import './Publications.css';
+import React from 'react'
+import './Publications.css'
 
-const Publications = () => {
-  if (!publications.length) return null;
+const Publications = ({ publications }) => {
+  if (!publications?.length) return null
 
   return (
-    <section id='publications' className='section publications'>
+    <section className='section publications' id='publications'>
       <h2 className='section__title'>Publications</h2>
-      <div className='publications__list'>
-        {publications.map((pub) => (
-          <div key={uniqid()} className='publication__item'>
-            <h3 className='publication__title'>{pub.title}</h3>
-            <p className='publication__authors'>{pub.authors}</p>
-            <p className='publication__venue'>{pub.venue} ({pub.year})</p>
+
+      <div className='publications__grid'>
+        {publications.map((publication, index) => (
+          <div key={index} className='publication'>
+            <h3 className='publication__title'>{publication.title}</h3>
             
-            {pub.description && (
+            <div className='publication__authors'>{publication.authors}</div>
+            
+            <div className='publication__venue'>
+              <strong>{publication.venue}</strong>
+              {publication.location && (
+                <span className='publication__location'> • {publication.location}</span>
+              )}
+              <span className='publication__year'> • {publication.month} {publication.year}</span>
+            </div>
+
+            {publication.note && (
+              <div className='publication__note'>{publication.note}</div>
+            )}
+
+            {publication.description && (
               <ul className='publication__description'>
-                {pub.description.map((desc, idx) => (
-                  <li key={idx}>{desc}</li>
+                {publication.description.map((point, i) => (
+                  <li key={i}>{point}</li>
                 ))}
               </ul>
             )}
-            
-            {pub.links && (
+
+            {publication.links && (
               <div className='publication__links'>
-                {pub.links.paper && (
+                {publication.links.paper && (
                   <a
-                    href={pub.links.paper}
-                    aria-label='paper'
-                    className='link link--icon'
+                    href={publication.links.paper}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='link publication__link'
                   >
-                    <LaunchIcon />
-                    <span>Paper</span>
+                    Paper
                   </a>
                 )}
-                {pub.links.code && (
+                {publication.links.code && (
                   <a
-                    href={pub.links.code}
-                    aria-label='code'
-                    className='link link--icon'
+                    href={publication.links.code}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='link publication__link'
                   >
-                    <GitHubIcon />
-                    <span>Code</span>
+                    Code
                   </a>
                 )}
               </div>
+            )}
+
+            {publication.status && (
+              <div className='publication__status'>{publication.status}</div>
             )}
           </div>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Publications;
+export default Publications
