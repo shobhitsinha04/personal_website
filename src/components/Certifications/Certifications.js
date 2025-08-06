@@ -1,4 +1,4 @@
-// src/components/Certifications/Certifications.js
+// src/components/Certifications/Certifications.js - More realistic layout
 import React from 'react';
 import uniqid from 'uniqid';
 import { certifications } from '../../portfolio';
@@ -23,14 +23,6 @@ const Certifications = () => {
               </div>
             </div>
             
-            {cert.description && (
-              <ul className='certification__description'>
-                {cert.description.map((desc, idx) => (
-                  <li key={idx}>{desc}</li>
-                ))}
-              </ul>
-            )}
-            
             <div className='certification__actions'>
               {cert.verifyLink && (
                 <a
@@ -40,7 +32,7 @@ const Certifications = () => {
                   className='certification__button certification__button--verify'
                 >
                   <VerifiedUserIcon className='certification__button-icon' />
-                  <span>Verify Certificate</span>
+                  <span>Verify</span>
                 </a>
               )}
               {cert.certificateLink && (

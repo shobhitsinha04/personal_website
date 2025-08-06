@@ -1,4 +1,4 @@
-
+// src/components/ProjectContainer/ProjectContainer.js - Enhanced GitHub links
 import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
@@ -28,26 +28,34 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
-    {/* Links for source code and live preview */}
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
+    {/* Enhanced Links Section */}
+    <div className='project__links'>
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='view source code'
+          className='project__link project__link--github'
+        >
+          <GitHubIcon className='project__link-icon' />
+          <span className='project__link-text'>View Code</span>
+        </a>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <LaunchIcon />
-      </a>
-    )}
+      {project.livePreview && (
+        <a
+          href={project.livePreview}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='live preview'
+          className='project__link project__link--demo'
+        >
+          <LaunchIcon className='project__link-icon' />
+          <span className='project__link-text'>Live Demo</span>
+        </a>
+      )}
+    </div>
   </div>
 )
 
