@@ -1,11 +1,11 @@
-// src/components/Navbar/Navbar.js
+// src/components/Navbar/Navbar.js - Added resume button
 import { useContext, useState } from 'react'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { experience, publications, projects, certifications } from '../../portfolio'
+import { experience, publications, projects, certifications, about } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
@@ -68,6 +68,20 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
             </button>
           </li>
         ) : null}
+
+        {/* Resume Button */}
+        {about.resume && (
+          <li className='nav__list-item'>
+            <a
+              href={about.resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='link link--nav nav__resume'
+            >
+              Resume
+            </a>
+          </li>
+        )}
       </ul>
 
       <button
