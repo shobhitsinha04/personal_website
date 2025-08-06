@@ -11,6 +11,7 @@ const about = {
     <br />,
     'My experience spans Machine Learning, Generative AI, LLM fine-tuning, and NLP. I enjoy building end-to-end AI solutions, from training models to deploying them in real-world applications where performance and usability matter.',
     <br />,
+    <br />,
     'I\'m always looking to build technology that\'s practical, efficient, and actually makes a difference. Feel free to explore my portfolio to see what I\'ve been working on.'
   ],
   resume: 'https://drive.google.com/file/d/183VoJDwRaLPh9DrnK_41RzCcvE2vNXex/view?usp=sharing',
