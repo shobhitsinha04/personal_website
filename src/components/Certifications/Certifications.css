@@ -1,4 +1,4 @@
-/* src/components/Certifications/Certifications.css - Complete new version */
+/* src/components/Certifications/Certifications.css - Fixed white background and clean buttons */
 .certifications {
   padding: 2rem 0;
 }
@@ -12,7 +12,7 @@
 }
 
 .certification__item {
-  background-color: #f9f9f9;
+  background-color: #ffffff !important; /* Force white background in both themes */
   border: 1px solid #ddd;
   padding: 1.5rem;
   border-radius: 8px;
@@ -35,7 +35,7 @@
 .certification__name {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #333;
+  color: #333 !important; /* Force dark text in both themes */
   margin-bottom: 0.8rem;
   line-height: 1.3;
 }
@@ -50,18 +50,19 @@
 
 .certification__issuer {
   font-size: 1rem;
-  color: #666;
+  color: #666 !important; /* Force dark text in both themes */
   font-weight: 500;
   margin: 0;
 }
 
 .certification__date {
   font-size: 0.85rem;
-  color: #888;
-  background-color: #e8e8e8;
+  color: #555 !important; /* Force dark text in both themes */
+  background-color: #f8f9fa; /* Light background */
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   font-weight: 500;
+  border: 1px solid #e9ecef;
 }
 
 .certification__description {
@@ -74,7 +75,7 @@
 .certification__description li {
   margin-bottom: 0.6rem;
   line-height: 1.6;
-  color: #444;
+  color: #444 !important; /* Force dark text in both themes */
   font-size: 0.95rem;
 }
 
@@ -100,7 +101,6 @@
   flex: 1;
   justify-content: center;
   min-width: 140px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px;
   border: 1px solid transparent;
   white-space: nowrap;
   /* Fix text selection and highlighting */
@@ -111,10 +111,13 @@
   -webkit-tap-highlight-color: transparent;
   outline: none;
   cursor: pointer;
+  /* Remove any default styling that makes it look selected */
+  background: none;
+  box-shadow: none;
 }
 
 .certification__button:focus {
-  outline: 2px solid var(--clr-primary);
+  outline: 2px solid #2978b5;
   outline-offset: 2px;
 }
 
@@ -134,8 +137,8 @@
 
 .certification__button--verify {
   color: #28a745;
-  background-color: rgba(40, 167, 69, 0.08);
-  border-color: rgba(40, 167, 69, 0.2);
+  background-color: #f8f9fa;
+  border: 1px solid #d0d7de;
 }
 
 .certification__button--verify:hover {
@@ -147,15 +150,15 @@
 }
 
 .certification__button--view {
-  color: var(--clr-primary);
-  background-color: rgba(41, 120, 181, 0.08);
-  border-color: rgba(41, 120, 181, 0.2);
+  color: #2978b5;
+  background-color: #f8f9fa;
+  border: 1px solid #d0d7de;
 }
 
 .certification__button--view:hover {
-  background-color: var(--clr-primary);
+  background-color: #2978b5;
   color: white;
-  border-color: var(--clr-primary);
+  border-color: #2978b5;
   transform: translateY(-2px);
   box-shadow: rgba(41, 120, 181, 0.25) 0px 4px 12px;
 }
@@ -164,41 +167,44 @@
   transform: translateY(0);
 }
 
-/* Dark mode compatibility */
+/* Remove dark mode overrides - keep white background in all themes */
 .dark .certification__item {
-  background-color: var(--clr-bg-alt);
-  border-color: #444;
+  background-color: #ffffff !important; /* Keep white background in dark mode */
+  border-color: #ddd;
 }
 
 .dark .certification__name {
-  color: var(--clr-fg-alt);
+  color: #333 !important; /* Keep dark text in dark mode */
 }
 
 .dark .certification__issuer {
-  color: var(--clr-fg);
+  color: #666 !important; /* Keep dark text in dark mode */
 }
 
 .dark .certification__date {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--clr-fg);
+  background-color: #f8f9fa !important; /* Keep light background in dark mode */
+  color: #555 !important; /* Keep dark text in dark mode */
+  border-color: #e9ecef;
 }
 
 .dark .certification__description li {
-  color: var(--clr-fg);
+  color: #444 !important; /* Keep dark text in dark mode */
 }
 
 .dark .certification__actions {
-  border-top-color: #444;
+  border-top-color: #eee;
 }
 
 .dark .certification__button--verify {
-  background-color: rgba(40, 167, 69, 0.15);
-  border-color: rgba(40, 167, 69, 0.3);
+  background-color: #f8f9fa;
+  border-color: #d0d7de;
+  color: #28a745;
 }
 
 .dark .certification__button--view {
-  background-color: rgba(144, 160, 217, 0.15);
-  border-color: rgba(144, 160, 217, 0.3);
+  background-color: #f8f9fa;
+  border-color: #d0d7de;
+  color: #2978b5;
 }
 
 /* Responsive design */
