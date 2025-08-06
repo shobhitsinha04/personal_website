@@ -1,4 +1,4 @@
-/* src/components/Certifications/Certifications.css - More realistic and cohesive */
+/* src/components/Certifications/Certifications.css - Complete new version */
 .certifications {
   padding: 2rem 0;
 }
@@ -6,148 +6,211 @@
 .certifications__list {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2rem;
 }
 
 .certification__item {
-  background-color: #f9f9f9; /* Match other components */
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 1.5rem;
-  border-radius: 8px; /* Match other components */
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .certification__item:hover {
-  transform: scale(1.02); /* Match projects hover */
+  transform: scale(1.02);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
 }
 
 .certification__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .certification__name {
-  font-size: 1.4rem; /* Match project titles */
+  font-size: 1.3rem;
   font-weight: bold;
   color: #333;
+  margin-bottom: 0.8rem;
   line-height: 1.3;
-  margin: 0;
-  flex: 1;
 }
 
 .certification__meta {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  flex-shrink: 0;
 }
 
 .certification__issuer {
   font-size: 1rem;
-  color: #666; /* Match secondary text */
+  color: #666;
   font-weight: 500;
   margin: 0;
-  text-align: right;
 }
 
 .certification__date {
   font-size: 0.85rem;
   color: #888;
-  background-color: #e8e8e8; /* Subtle, not flashy */
+  background-color: #e8e8e8;
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   font-weight: 500;
 }
 
 .certification__description {
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0;
   padding-left: 1.5rem;
   list-style-type: disc;
+  flex-grow: 1;
 }
 
 .certification__description li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   line-height: 1.6;
-  color: #444; /* Match project descriptions */
+  color: #444;
   font-size: 0.95rem;
 }
 
 .certification__actions {
   display: flex;
-  gap: 1rem;
-  justify-content: center; /* Center like projects */
-  align-items: center;
+  gap: 0.8rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
   flex-wrap: wrap;
 }
 
 .certification__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1rem;
-  border-radius: 6px; /* Match project links */
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
-  min-width: 130px;
+  flex: 1;
   justify-content: center;
+  min-width: 140px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  /* Fix text selection and highlighting */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.certification__button:focus {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
 }
 
 .certification__button-icon {
   font-size: 16px !important;
+  flex-shrink: 0;
+}
+
+.certification__button span {
+  /* Additional fix for text highlighting */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
 }
 
 .certification__button--verify {
   color: #28a745;
-  background-color: rgba(40, 167, 69, 0.1);
-  border: 1px solid rgba(40, 167, 69, 0.2);
+  background-color: rgba(40, 167, 69, 0.08);
+  border-color: rgba(40, 167, 69, 0.2);
 }
 
 .certification__button--verify:hover {
   background-color: #28a745;
   color: white;
+  border-color: #28a745;
   transform: translateY(-2px);
-  box-shadow: rgba(40, 167, 69, 0.2) 0px 4px 8px;
+  box-shadow: rgba(40, 167, 69, 0.25) 0px 4px 12px;
 }
 
 .certification__button--view {
   color: var(--clr-primary);
-  background-color: rgba(41, 120, 181, 0.1);
-  border: 1px solid rgba(41, 120, 181, 0.2);
+  background-color: rgba(41, 120, 181, 0.08);
+  border-color: rgba(41, 120, 181, 0.2);
 }
 
 .certification__button--view:hover {
   background-color: var(--clr-primary);
   color: white;
+  border-color: var(--clr-primary);
   transform: translateY(-2px);
-  box-shadow: rgba(41, 120, 181, 0.2) 0px 4px 8px;
+  box-shadow: rgba(41, 120, 181, 0.25) 0px 4px 12px;
+}
+
+.certification__button:active {
+  transform: translateY(0);
+}
+
+/* Dark mode compatibility */
+.dark .certification__item {
+  background-color: var(--clr-bg-alt);
+  border-color: #444;
+}
+
+.dark .certification__name {
+  color: var(--clr-fg-alt);
+}
+
+.dark .certification__issuer {
+  color: var(--clr-fg);
+}
+
+.dark .certification__date {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--clr-fg);
+}
+
+.dark .certification__description li {
+  color: var(--clr-fg);
+}
+
+.dark .certification__actions {
+  border-top-color: #444;
+}
+
+.dark .certification__button--verify {
+  background-color: rgba(40, 167, 69, 0.15);
+  border-color: rgba(40, 167, 69, 0.3);
+}
+
+.dark .certification__button--view {
+  background-color: rgba(144, 160, 217, 0.15);
+  border-color: rgba(144, 160, 217, 0.3);
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .certification__header {
-    flex-direction: column;
-    align-items: flex-start;
+  .certifications__list {
+    grid-template-columns: 1fr;
   }
   
   .certification__meta {
+    flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .certification__issuer {
-    text-align: left;
+    gap: 0.8rem;
   }
   
   .certification__actions {
@@ -156,20 +219,22 @@
   }
   
   .certification__button {
+    flex: none;
     min-width: 100%;
   }
 }
 
-@media (max-width: 600px) {
-  .certifications__list {
-    gap: 1.5rem;
-  }
-  
+@media (max-width: 480px) {
   .certification__item {
     padding: 1.2rem;
   }
   
   .certification__name {
     font-size: 1.2rem;
+  }
+  
+  .certification__button {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
   }
 }
