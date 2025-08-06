@@ -87,7 +87,8 @@ const projects = [
       'Trained a custom Deep Learning model in PyTorch for fatigue detection, improving prediction reliability.',
       'Designed a computer vision pipeline to improve real-time detection speed and efficiency'
     ],
-    stack: ['OpenCV', 'Deep Learning', 'PyTorch']
+    stack: ['OpenCV', 'Deep Learning', 'PyTorch'],
+    sourceCode: 'https://github.com/shobhitsinha04/driver_monitoring_system/tree/main/Driver%20Monitoring%20System'
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
@@ -108,6 +109,7 @@ const projects = [
       'Developed a Flask-based query server for file uploads and chatbot interactions with an LLM.'
     ],
     stack: ['LLMs', 'RAG', 'Python', 'Flask', 'ChromaDB'],
+    sourceCode: 'https://github.com/shobhitsinha04/chrome-rag-main',
   },
   {
     name: 'HealthConnect | Integrated Health Management App',
@@ -117,6 +119,7 @@ const projects = [
       'Delivered a data-driven alert system that detected early health risks in 85% of flagged cases.'
     ],
     stack: ['SQL', 'GCP', 'DBMS'],
+    sourceCode: 'https://github.com/shobhitsinha04/healthconnect',
   },
   {
     name: 'Sentiment Analysis on Social Media and Reviews',
@@ -126,6 +129,7 @@ const projects = [
       'Utilized Matplotlib for data visualization to identify patterns and trends in the sentiment data.'
     ],
     stack: ['Python', 'NLP', 'Deep Learning'],
+    sourceCode: 'https://github.com/shobhitsinha04/sentiment_analysis1',
   },
   {
     name: 'Dynamic Reading Companion',
@@ -135,7 +139,6 @@ const projects = [
       'Leveraging advanced NLP techniques to analyze mood transitions, and API integration (OpenAI, Spotify, Gutendex) for enhanced data processing efficiency.'
     ],
     stack: ['Python', 'Flask', 'OpenAI API', 'React', 'Spotify API'],
-    sourceCode: 'https://github.com',
   },
   {
     name: "FPGA Golf Game",
