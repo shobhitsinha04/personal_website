@@ -33,55 +33,9 @@
   width: 100% !important;
 }
 
-/* Resume Button Styling */
 .nav__resume {
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--clr-primary);
-  border-radius: 4px;
-  transition: all 0.3s ease;
   font-weight: 600;
-  background: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.nav__resume:hover {
-  color: var(--clr-bg);
-  transform: translateY(-2px);
-}
-
-.nav__resume:before {
-  content: '';
-  position: absolute;
-  background-color: var(--clr-primary);
-  right: 100%;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: right 0.3s ease-in-out;
-}
-
-.nav__resume:hover:before {
-  right: 0;
-}
-
-/* Remove underline animation for resume button */
-.nav__resume::before {
-  display: none;
-}
-
-.nav__resume:hover::before {
-  display: block;
-  width: auto;
-  height: auto;
-  bottom: auto;
-  background-color: var(--clr-primary);
-  right: 100%;
-  left: 0;
-  top: 0;
-  transition: right 0.3s ease-in-out;
+  color: var(--clr-primary) !important;
 }
 
 @media (max-width: 600px) {
@@ -107,10 +61,8 @@
     margin-left: 0.8em;
   }
 
-  /* Mobile resume button styling */
   .nav__resume {
     margin: 0.5em 0;
-    padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
 }
