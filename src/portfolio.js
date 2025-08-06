@@ -27,9 +27,9 @@ const experience = [
     duration: 'July 2025 - Present',
     location: 'Chicago, IL',
     description: [
-      '• Built a 3D reconstruction pipeline using Gaussian Splatting, Open3D, and Poisson Reconstruction.',
-      '• Converted point clouds to 3D meshes with surface data for physics engine integration achieving 90% watertightness.',
-      '• Enabled simulation-based data generation to train downstream ML models.'
+      'Built a 3D reconstruction pipeline using Gaussian Splatting, Open3D, and Poisson Reconstruction.',
+      'Converted point clouds to 3D meshes with surface data for physics engine integration achieving 90% watertightness.',
+      'Enabled simulation-based data generation to train downstream ML models.'
     ],
   },
   {
@@ -38,9 +38,9 @@ const experience = [
     duration: 'Jan. 2025 – May 2025',
     location: 'Chicago, IL',
     description: [
-      '• Engineered an AWS cloud-based ML pipeline to classify 10,000+ POIs using vector embeddings and LLMs.',
-      '• Deployed a multi-prompt LLM framework using word embeddings to process large-scale data with 98% accuracy.',
-      '• Tuned thresholds and prompt variants to boost classification accuracy by 6% while reducing latency.'
+      'Engineered an AWS cloud-based ML pipeline to classify 10,000+ POIs using vector embeddings and LLMs.',
+      'Deployed a multi-prompt LLM framework using word embeddings to process large-scale data with 98% accuracy.',
+      'Tuned thresholds and prompt variants to boost classification accuracy by 6% while reducing latency.'
     ]
   },
   {
@@ -49,9 +49,9 @@ const experience = [
     duration: 'May 2024 - May 2025',
     location: 'Sydney, Australia',
     description: [
-      '• Published a research paper as co-first author on a modular framework for LLM-based human trajectory simulation.',
-      '• Implemented 1000+ agents with personality and memory generation, integrating GPT, Llama and custom algorithms.',
-      '• Improved inference-driven agent interactions by 31% through spatial analysis and contextual understanding.'
+      'Published a research paper as co-first author on a modular framework for LLM-based human trajectory simulation.',
+      'Implemented 1000+ agents with personality and memory generation, integrating GPT, Llama and custom algorithms.',
+      'Improved inference-driven agent interactions by 31% through spatial analysis and contextual understanding.'
     ]
   }
 ]
@@ -102,16 +102,6 @@ const projects = [
     sourceCode: 'https://github.com/shobhitsinha04/Building_LLM',
   },
   {
-    name: 'DocuMine – AI Chrome Extension for Research',
-    description: [
-      'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
-      'Processed 200+ documents, embedding 10,000+ chunks into ChromaDB, boosting retrieval speed by 35%.',
-      'Developed a Flask-based query server for file uploads and chatbot interactions with an LLM.'
-    ],
-    stack: ['LLMs', 'RAG', 'Python', 'Flask', 'ChromaDB'],
-    sourceCode: 'https://github.com/shobhitsinha04/chrome-rag-main',
-  },
-  {
     name: 'HealthConnect | Integrated Health Management App',
     description: [
       'Deployed a scalable health management platform on GCP, handling 50M+ records through NHANES and Fitbit.',
@@ -120,6 +110,16 @@ const projects = [
     ],
     stack: ['SQL', 'GCP', 'DBMS'],
     sourceCode: 'https://github.com/shobhitsinha04/healthconnect',
+  },
+  {
+    name: 'DocuMine – AI Chrome Extension for Research',
+    description: [
+      'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
+      'Processed 200+ documents, embedding 10,000+ chunks into ChromaDB, boosting retrieval speed by 35%.',
+      'Developed a Flask-based query server for file uploads and chatbot interactions with an LLM.'
+    ],
+    stack: ['LLMs', 'RAG', 'Python', 'Flask', 'ChromaDB'],
+    sourceCode: 'https://github.com/shobhitsinha04/chrome-rag-main',
   },
   {
     name: 'Sentiment Analysis on Social Media and Reviews',
@@ -168,24 +168,37 @@ const certifications = [
     name: 'Machine Learning Specialization',
     issuer: 'Stanford University (Coursera)',
     date: 'June 2025',
-    credentialId: 'ABC123XYZ', // Add actual credential ID
-    link: 'https://coursera.org/verify/ABC123XYZ' // Add actual verification link
+    link: 'https://www.coursera.org/account/accomplishments/specialization/4TIWJC2BCAEO',
+    certificate: 'https://drive.google.com/file/d/1ZoCTZFFN8M7R_wuwHvMqPOgdsZ3SG36X/view?usp=sharing'
   },
   {
-    name: 'Deep Learning Specialization',
+    name: 'Deep Neural Networks with PyTorch',
+    issuer: 'IBM (Coursera)',
+    date: '2024',
+    link: 'https://www.coursera.org/account/accomplishments/verify/BUX22BQFA6CM',
+    certificate: 'https://drive.google.com/file/d/1wvKcj0qfguzSGfOw8w0I7GhynvHBeWu9/view?usp=sharing'
+  },
+  {
+    name: 'Generative AI with Large Language Models',
     issuer: 'DeepLearning.AI (Coursera)',
     date: '2024',
-    credentialId: 'DEF456ABC',
-    link: 'https://coursera.org/verify/DEF456ABC'
+    link: 'https://www.coursera.org/account/accomplishments/verify/7WY74D5VKP43',
+    certificate: 'https://drive.google.com/file/d/1RCSQSvlHIFL7qvzEk16rcylsefbhqBNd/view?usp=sharing'
   },
   {
-    name: 'AWS Machine Learning - Specialty',
-    issuer: 'Amazon Web Services',
-    date: 'June 2025',
-    credentialId: 'AWS-ML-12345',
-    link: 'https://aws.amazon.com/verification'
+    name: 'Generative AI and LLMs: Architecture and Data Preparation',
+    issuer: 'IBM (Coursera)',
+    date: '2024',
+    link: 'https://www.coursera.org/account/accomplishments/verify/2JKXUTKK3WCK',
+    certificate: 'https://drive.google.com/file/d/1rQxyedk8faGPQeMRNP-E6n6lKhMjfU9V/view?usp=sharing'
+  },
+  {
+    name: 'Generative AI: Introduction and Applications',
+    issuer: 'IBM (Coursera)',
+    date: '2024',
+    link: 'https://www.coursera.org/account/accomplishments/verify/TCRWMYZL4QCF',
+    certificate: 'https://drive.google.com/file/d/1BbpGDfCA8yHdzUR3uysdyMcPJGTdZCiS/view?usp=sharing'
   }
-  // Add more certifications as needed
 ]
 
 const skills = [
