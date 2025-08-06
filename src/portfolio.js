@@ -14,7 +14,7 @@ const about = {
     <br />,
     'I\'m always looking to build technology that\'s practical, efficient, and actually makes a difference. Feel free to explore my portfolio to see what I\'ve been working on.'
   ],
-  resume: 'https://drive.google.com/file/d/183VoJDwRaLPh9DrnK_41RzCcvE2vNXex/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1cFbccufBMgZFqLWOVtTi9t72GAqJz9BF/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
     github: 'https://github.com/shobhitsinha04',
