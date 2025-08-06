@@ -7,7 +7,7 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2rem;
 }
 
@@ -15,16 +15,21 @@
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .certification__item:hover {
-  transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+}
+
+.certification__header {
+  margin-bottom: 1rem;
 }
 
 .certification__name {
@@ -32,13 +37,13 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 0.8rem;
+  line-height: 1.3;
 }
 
 .certification__meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
@@ -47,14 +52,17 @@
   font-size: 1rem;
   color: #666;
   font-weight: 500;
+  margin: 0;
 }
 
 .certification__date {
-  font-size: 0.9rem;
-  color: #888;
-  background-color: #e8e8e8;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
 }
 
 .certification__description {
@@ -65,44 +73,71 @@
 }
 
 .certification__description li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   line-height: 1.6;
   color: #444;
   font-size: 0.95rem;
 }
 
-.certification__footer {
+.certification__actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 0.8rem;
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid #eee;
   flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
-.certification__credential {
-  font-size: 0.8rem;
-  color: #777;
-  font-family: 'Courier New', monospace;
-}
-
-.certification__link {
+.certification__button {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
-  color: var(--clr-primary);
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  min-width: 140px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
 }
 
-.certification__link:hover {
-  color: var(--clr-fg-alt);
+.certification__button-icon {
+  font-size: 18px !important;
 }
 
-@media (max-width: 600px) {
+.certification__button--verify {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.certification__button--verify:hover {
+  background: linear-gradient(135deg, #218838 0%, #1ea085 100%);
+  transform: translateY(-2px);
+  box-shadow: rgba(40, 167, 69, 0.3) 0px 4px 12px;
+}
+
+.certification__button--view {
+  background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.certification__button--view:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #520dc2 100%);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 123, 255, 0.3) 0px 4px 12px;
+}
+
+.certification__button:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .certifications__list {
     grid-template-columns: 1fr;
   }
@@ -110,10 +145,31 @@
   .certification__meta {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.8rem;
   }
   
-  .certification__footer {
+  .certification__actions {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .certification__button {
+    flex: none;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification__item {
+    padding: 1.2rem;
+  }
+  
+  .certification__name {
+    font-size: 1.2rem;
+  }
+  
+  .certification__button {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
   }
 }

@@ -168,36 +168,36 @@ const certifications = [
     name: 'Machine Learning Specialization',
     issuer: 'Stanford University (Coursera)',
     date: 'June 2025',
-    link: 'https://www.coursera.org/account/accomplishments/specialization/4TIWJC2BCAEO',
-    certificate: 'https://drive.google.com/file/d/1ZoCTZFFN8M7R_wuwHvMqPOgdsZ3SG36X/view?usp=sharing'
+    verifyLink: 'https://www.coursera.org/account/accomplishments/specialization/4TIWJC2BCAEO',
+    certificateLink: 'https://drive.google.com/file/d/1ZoCTZFFN8M7R_wuwHvMqPOgdsZ3SG36X/view?usp=sharing'
   },
   {
     name: 'Deep Neural Networks with PyTorch',
     issuer: 'IBM (Coursera)',
     date: '2024',
-    link: 'https://www.coursera.org/account/accomplishments/verify/BUX22BQFA6CM',
-    certificate: 'https://drive.google.com/file/d/1wvKcj0qfguzSGfOw8w0I7GhynvHBeWu9/view?usp=sharing'
+    verifyLink: 'https://www.coursera.org/account/accomplishments/verify/BUX22BQFA6CM',
+    certificateLink: 'https://drive.google.com/file/d/1wvKcj0qfguzSGfOw8w0I7GhynvHBeWu9/view?usp=sharing'
   },
   {
     name: 'Generative AI with Large Language Models',
     issuer: 'DeepLearning.AI (Coursera)',
     date: '2024',
-    link: 'https://www.coursera.org/account/accomplishments/verify/7WY74D5VKP43',
-    certificate: 'https://drive.google.com/file/d/1RCSQSvlHIFL7qvzEk16rcylsefbhqBNd/view?usp=sharing'
+    verifyLink: 'https://www.coursera.org/account/accomplishments/verify/7WY74D5VKP43',
+    certificateLink: 'https://drive.google.com/file/d/1RCSQSvlHIFL7qvzEk16rcylsefbhqBNd/view?usp=sharing'
   },
   {
     name: 'Generative AI and LLMs: Architecture and Data Preparation',
     issuer: 'IBM (Coursera)',
     date: '2024',
-    link: 'https://www.coursera.org/account/accomplishments/verify/2JKXUTKK3WCK',
-    certificate: 'https://drive.google.com/file/d/1rQxyedk8faGPQeMRNP-E6n6lKhMjfU9V/view?usp=sharing'
+    verifyLink: 'https://www.coursera.org/account/accomplishments/verify/2JKXUTKK3WCK',
+    certificateLink: 'https://drive.google.com/file/d/1rQxyedk8faGPQeMRNP-E6n6lKhMjfU9V/view?usp=sharing'
   },
   {
     name: 'Generative AI: Introduction and Applications',
     issuer: 'IBM (Coursera)',
     date: '2024',
-    link: 'https://www.coursera.org/account/accomplishments/verify/TCRWMYZL4QCF',
-    certificate: 'https://drive.google.com/file/d/1BbpGDfCA8yHdzUR3uysdyMcPJGTdZCiS/view?usp=sharing'
+    verifyLink: 'https://www.coursera.org/account/accomplishments/verify/TCRWMYZL4QCF',
+    certificateLink: 'https://drive.google.com/file/d/1BbpGDfCA8yHdzUR3uysdyMcPJGTdZCiS/view?usp=sharing'
   }
 ]
 
