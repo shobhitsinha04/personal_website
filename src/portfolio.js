@@ -18,6 +18,7 @@ const about = {
   social: {
     linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
     github: 'https://github.com/shobhitsinha04',
+    googleScholar: 'https://scholar.google.com/citations?user=v0q1vF8AAAAJ&hl=en&authuser=6',
   },
 }
 
