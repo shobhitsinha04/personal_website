@@ -6,10 +6,10 @@ const header = {
 const about = {
   name: 'Shobhit Sinha',
   description: [
-    'Hi, I\'m Shobhit,  a Computer Engineering student at UIUC passionate about building intelligent, scalable systems that solve real-world problems.',
+    'Hi, I\'m Shobhit, a Computer Engineering student at UIUC who enjoys building intelligent, and scalable systems with machine learning.',
     <br />,
     <br />,
-    'My experience spans Machine Learning, Generative AI, LLM fine-tuning, and NLP. I enjoy building end-to-end AI solutions, from training models to deploying them in real-world applications where performance and usability matter.',
+    'I like applying generative and predictive models to problems that span from simulating urban movement with AI agents to understanding long term health patterns.',
     <br />,
     <br />,
     'I\'m always looking to build technology that\'s practical, efficient, and actually makes a difference. Feel free to explore my portfolio to see what I\'ve been working on.'
