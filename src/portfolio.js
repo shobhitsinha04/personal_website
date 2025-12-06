@@ -24,14 +24,25 @@ const about = {
 
 const experience = [
   {
-    name: 'Data Science and R&D Intern',
-    company: 'CCC Intelligent Solutions',
-    duration: 'July 2025 - Present',
+    name: 'Undergraduate Researcher',
+    company: 'Siebel School of Computing and Data Science',
+    duration: 'August 2025 - Present',
     location: 'Chicago, IL',
     description: [
-      'Built a 3D reconstruction pipeline using Gaussian Splatting, Open3D, and Poisson Reconstruction.',
-      'Converted point clouds to 3D meshes with surface data for physics engine integration achieving 90% watertightness.',
-      'Enabled simulation-based data generation to train downstream ML models.'
+      'Optimizing scalable data pipelines for processing large-scale biomedical datasets with high sparsity and complexity.',
+      'Experimenting with transformer and graph neural network models to process time-varying sequential data predictions.  ',
+      'Exploring prototype services leveraging probabilistic and transfer learning methods for cross-population adaptation.'
+    ],
+  },
+  {
+    name: 'Data Science and R&D Intern',
+    company: 'CCC Intelligent Solutions',
+    duration: 'July 2025 - August 2025',
+    location: 'Chicago, IL',
+    description: [
+      'Researched software pipelines for 3D Reconstruction and mesh generation for large scale vision tasks. ',
+      'Optimized integration with physics engines, improving watertightness and reducing error rates by 90%. ',
+      'Automated simulation-based data generation workflows to support downstream ML models and systems. '
     ],
   },
   {
