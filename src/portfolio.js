@@ -73,8 +73,9 @@ const publications = [
       'Demonstrated scalability with 1000+ simultaneous agents maintaining individual personalities and memory states.'
     ],
     links: {
-      paper: 'https://arxiv.org/pdf/2502.18712',
-      code: 'https://github.com/shobhitsinha04/TrajLLM'
+      paper: 'https://dl.acm.org/doi/pdf/10.1145/3701716.3715201',
+      code: 'https://github.com/shobhitsinha04/TrajLLM',
+      arxiv: "https://arxiv.org/abs/2502.18712"
     },
     status: 'Published',
   }

@@ -44,6 +44,18 @@ const Publications = () => {
                     <span>Paper</span>
                   </a>
                 )}
+                {pub.links.arxiv && (
+                  <a
+                    href={pub.links.arxiv}
+                    aria-label='arxiv'
+                    className='link link--icon'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <LaunchIcon />
+                    <span>arXiv</span>
+                  </a>
+                )}
                 {pub.links.code && (
                   <a
                     href={pub.links.code}
