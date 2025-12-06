@@ -51,9 +51,9 @@ const experience = [
     duration: 'Jan. 2025 – May 2025',
     location: 'Chicago, IL',
     description: [
-      'Engineered an AWS cloud-based ML pipeline to classify 10,000+ POIs using vector embeddings and LLMs.',
-      'Deployed a multi-prompt LLM framework using word embeddings to process large-scale data with 98% accuracy.',
-      'Tuned thresholds and prompt variants to boost classification accuracy by 6% while reducing latency.'
+      'Engineered a cloud-based ML pipeline for spatial data classification of 10,000+ POIs using embeddings and LLMs.',
+      'Developed a multi-prompt framework for LLM-driven classification, enhancing throughput by 35%.',
+      'Automated CI/CD deployments with Docker and GitHub Actions, reducing deployment time by 60% across AWS. '
     ]
   },
   {
@@ -238,7 +238,6 @@ const skills = [
 ];
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'shobhit.sinha2004@gmail.com',
 }
 
