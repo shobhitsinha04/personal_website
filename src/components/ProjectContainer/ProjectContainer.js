@@ -2,6 +2,7 @@
 import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
+import ExtensionIcon from '@material-ui/icons/Extension'
 import './ProjectContainer.css'
 
 const ProjectContainer = ({ project }) => (
@@ -53,6 +54,19 @@ const ProjectContainer = ({ project }) => (
         >
           <LaunchIcon className='project__link-icon' />
           <span className='project__link-text'>Live Demo</span>
+        </a>
+      )}
+
+      {project.marketplace && (
+        <a
+          href={project.marketplace}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='vs code marketplace'
+          className='project__link project__link--demo'
+        >
+          <ExtensionIcon className='project__link-icon' />
+          <span className='project__link-text'>Marketplace</span>
         </a>
       )}
     </div>

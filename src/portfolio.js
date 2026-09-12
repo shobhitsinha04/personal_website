@@ -27,7 +27,7 @@ const experience = [
     name: 'Undergraduate Researcher',
     company: 'Siebel School of Computing and Data Science',
     duration: 'August 2025 - Present',
-    location: 'Chicago, IL',
+    location: 'Champaign, IL',
     description: [
       'Optimizing scalable data pipelines for processing large-scale biomedical datasets with high sparsity and complexity.',
       'Experimenting with transformer and graph neural network models to process time-varying sequential data predictions.  ',
@@ -94,6 +94,27 @@ const publications = [
 ]
 
 const projects = [
+  {
+    name: 'Custom gRPC Load Balancer',
+    description: [
+      'Programmed a multithreaded L7 load balancer in C++ routing gRPC traffic across replicas at sub-millisecond latency.',
+      'Implemented the gRPC health-checking protocol, detecting failed backends in ~300 ms and rerouting 100% of requests.',
+      'Containerized with Docker and created Kubernetes deployment configs on GCP with Prometheus/Grafana observability.'
+    ],
+    stack: ['C++', 'gRPC', 'Kubernetes', 'Terraform', 'Docker'],
+    sourceCode: 'https://github.com/shobhitsinha04/grpc-load-balancer',
+  },
+  {
+    name: 'Knot AI – On-Device Coding Assistant',
+    description: [
+      'Built a privacy-first coding assistant with LLM inference running entirely on-device, eliminating reliance on cloud APIs.',
+      'Structured a RAG pipeline with embeddings and reranking over local codebases, achieving 97 ms p50 retrieval latency.',
+      'Validated a 21-module TypeScript architecture with 168 automated tests across 13 suites.'
+    ],
+    stack: ['TypeScript', 'Node.js', 'LLM Inference', 'Vector Database'],
+    sourceCode: 'https://github.com/freshgoldfish/knot',
+    marketplace: 'https://marketplace.visualstudio.com/items?itemName=freshgoldfish.knot-ai',
+  },
   {
     name: 'Driver Fatigue Detection System',
     description: [
