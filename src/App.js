@@ -41,6 +41,7 @@ const App = () => {
 
       <main>
         {renderContent()}
+        {currentPage === 'home' && <Skills />}
         {currentPage === 'home' && <Contact />}
       </main>
 
