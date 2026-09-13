@@ -8,7 +8,6 @@ import Education from './components/Education/Education'
 import Publications from './components/Publications/Publications' // Make sure this import exists
 import Projects from './components/Projects/Projects'
 import Certifications from './components/Certifications/Certifications' // Make sure this import exists
-import Skills from './components/Skills/Skills'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
@@ -41,7 +40,6 @@ const App = () => {
 
       <main>
         {renderContent()}
-        {currentPage === 'home' && <Skills />}
         {currentPage === 'home' && <Contact />}
       </main>
 
