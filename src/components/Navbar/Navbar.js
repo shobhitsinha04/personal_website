@@ -5,7 +5,7 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { experience, publications, projects, certifications, about } from '../../portfolio'
+import { experience, education, publications, projects, certifications, about } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
@@ -32,6 +32,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               className={`link link--nav ${currentPage === 'experience' ? 'link--active' : ''}`}
             >
               Experience
+            </button>
+          </li>
+        ) : null}
+
+        {education.length ? (
+          <li className='nav__list-item'>
+            <button
+              onClick={() => handleNavigation('education')}
+              className={`link link--nav ${currentPage === 'education' ? 'link--active' : ''}`}
+            >
+              Education
             </button>
           </li>
         ) : null}

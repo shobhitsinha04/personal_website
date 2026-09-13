@@ -1,0 +1,145 @@
+/* src/components/Education/Education.css */
+.education {
+  padding: 2rem 0;
+}
+
+.education__list {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education__item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #333;
+}
+
+.education__item:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+}
+
+.education__school {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education__degree {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+  margin: 0;
+}
+
+.education__details {
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.education__duration {
+  font-weight: 500;
+}
+
+.education__location {
+  color: #666;
+}
+
+.education__track {
+  margin: 0.25rem 0 0;
+  color: #444;
+  font-weight: 500;
+}
+
+.education__gpa {
+  margin: 0.4rem 0 0;
+  color: #444;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.education__honors {
+  margin: 0.4rem 0 0;
+  color: #2978b5;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.education__coursework {
+  margin-top: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Keep cards light in dark mode, matching the projects cards */
+.dark .education__item {
+  background-color: #ffffff !important;
+  border-color: #ddd;
+  color: #333 !important;
+}
+
+.dark .education__school,
+.dark .education__degree,
+.dark .education__details,
+.dark .education__location,
+.dark .education__track,
+.dark .education__gpa,
+.dark .education__coursework {
+  color: #333 !important;
+}
+
+.dark .education__honors {
+  color: #2978b5 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .education__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .education__details {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .education__item {
+    padding: 1.5rem;
+  }
+
+  .education__school {
+    font-size: 1.3rem;
+  }
+
+  .education__degree {
+    font-size: 1.1rem;
+  }
+
+  .education__details {
+    font-size: 0.9rem;
+  }
+}

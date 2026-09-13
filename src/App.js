@@ -4,6 +4,7 @@ import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
+import Education from './components/Education/Education'
 import Publications from './components/Publications/Publications' // Make sure this import exists
 import Projects from './components/Projects/Projects'
 import Certifications from './components/Certifications/Certifications' // Make sure this import exists
@@ -21,6 +22,8 @@ const App = () => {
     switch(currentPage) {
       case 'experience':
         return <Experience />
+      case 'education':
+        return <Education />
       case 'publications':
         return <Publications />
       case 'projects':

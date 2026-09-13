@@ -67,6 +67,26 @@ const experience = [
 ]
 
 
+const education = [
+  {
+    school: 'University of California, Berkeley',
+    degree: 'Master of Engineering (M.Eng.) in Electrical Engineering and Computer Sciences (EECS)',
+    track: 'Concentration in Data Science',
+    duration: 'Aug. 2026 - May 2027',
+    location: 'Berkeley, CA',
+  },
+  {
+    school: 'University of Illinois Urbana-Champaign',
+    degree: 'Bachelor of Science (B.S.) in Computer Engineering',
+    duration: 'Aug. 2022 - May 2026',
+    location: 'Urbana-Champaign, IL',
+    gpa: '3.67',
+    honors: 'Dean\'s List  ·  Edmund J. James Scholar',
+    coursework:
+      'Coursework spanned machine learning and AI (Applied Machine Learning, Artificial Intelligence, Human-LLM Interaction), the systems that run them (Computer Systems Engineering, Applied Parallel Programming, Digital Systems Laboratory), and the theory beneath it all (Algorithms & Models of Computation, Data Structures, Database Systems, Text Information Systems), rounded out with electives in autonomy, control, and networks (Principles of Safe Autonomy, Control Systems, Social & Information Networks).',
+  },
+]
+
 const publications = [
   {
     title: 'TrajLLM: A Modular LLM-Enhanced Agent-Based Framework for Realistic Human Trajectory Simulation',
@@ -259,4 +279,4 @@ const contact = {
   email: 'shobhit.sinha2004@gmail.com',
 }
 
-export { header, about, experience, publications, projects, certifications, skills, contact }
+export { header, about, experience, education, publications, projects, certifications, skills, contact }
