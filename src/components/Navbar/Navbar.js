@@ -25,17 +25,6 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        {experience.length ? (
-          <li className='nav__list-item'>
-            <button
-              onClick={() => handleNavigation('experience')}
-              className={`link link--nav ${currentPage === 'experience' ? 'link--active' : ''}`}
-            >
-              Experience
-            </button>
-          </li>
-        ) : null}
-
         {education.length ? (
           <li className='nav__list-item'>
             <button
@@ -43,6 +32,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               className={`link link--nav ${currentPage === 'education' ? 'link--active' : ''}`}
             >
               Education
+            </button>
+          </li>
+        ) : null}
+
+        {experience.length ? (
+          <li className='nav__list-item'>
+            <button
+              onClick={() => handleNavigation('experience')}
+              className={`link link--nav ${currentPage === 'experience' ? 'link--active' : ''}`}
+            >
+              Experience
             </button>
           </li>
         ) : null}

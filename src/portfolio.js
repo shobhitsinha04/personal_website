@@ -21,25 +21,36 @@ const about = {
 
 const experience = [
   {
-    name: 'Undergraduate Researcher',
+    name: 'Applied AI Engineer, Satellite Operations',
+    company: 'Satlyt Inc.',
+    duration: 'Sep. 2026 – Present',
+    location: 'Berkeley, CA',
+    description: [
+      'Collaborating with Satlyt through the UC Berkeley MEng Capstone on foundational AI for in-orbit computing.',
+      'Building an on-device satellite operations agent using SLMs to reason over telemetry and logs for autonomous decisions.',
+      'Benchmarking model latency, memory footprint, and reliability on Jetson-class hardware under realistic edge constraints.'
+    ],
+  },
+  {
+    name: 'ML Research Assistant',
     company: 'Siebel School of Computing and Data Science',
-    duration: 'August 2025 - Present',
+    duration: 'Aug. 2025 – Aug. 2026',
     location: 'Champaign, IL',
     description: [
-      'Optimizing scalable data pipelines for processing large-scale biomedical datasets with high sparsity and complexity.',
-      'Experimenting with transformer and graph neural network models to process time-varying sequential data predictions.  ',
-      'Exploring prototype services leveraging probabilistic and transfer learning methods for cross-population adaptation.'
+      'Established and scaled biomedical pipelines using Python and BigQuery SQL, ingesting 10M+ clinical records.',
+      'Engineered median-imputed feature pipelines across 600+ lab predictors for sparse clinical data.',
+      'Evaluated biomarker predictability across 75+ brain-health phenotypes using XGBoost and other ML classifiers.'
     ],
   },
   {
     name: 'Data Science and R&D Intern',
     company: 'CCC Intelligent Solutions',
-    duration: 'July 2025 - August 2025',
+    duration: 'Jul. 2025 – Aug. 2025',
     location: 'Chicago, IL',
     description: [
-      'Researched software pipelines for 3D Reconstruction and mesh generation for large scale vision tasks. ',
-      'Optimized integration with physics engines, improving watertightness and reducing error rates by 90%. ',
-      'Automated simulation-based data generation workflows to support downstream ML models and systems. '
+      'Developed computer vision data pipelines to convert vehicle imagery into meshes for 3D modeling and reconstruction.',
+      'Integrated physics-based validation into NeRF and Gaussian Splatting pipelines, achieving 90% mesh watertightness.',
+      'Automated a synthetic 3D data pipeline in NVIDIA Omniverse for downstream ML training.'
     ],
   },
   {
@@ -48,20 +59,20 @@ const experience = [
     duration: 'Jan. 2025 – May 2025',
     location: 'Chicago, IL',
     description: [
-      'Engineered a cloud-based ML pipeline for spatial data classification of 10,000+ POIs using embeddings and LLMs.',
-      'Developed a multi-prompt framework for LLM-driven classification, enhancing throughput by 35%.',
-      'Automated CI/CD deployments with Docker and GitHub Actions, reducing deployment time by 60% across AWS. '
+      'Classified 10,000+ POIs across 70 categories with 95.65% accuracy using MiniLM embeddings and LLaMA models.',
+      'Configured CI/CD deployments with Docker and GitHub Actions, reducing AWS deployment time by 60%.',
+      'Parallelized LLM calls within a multi-stage POI classification pipeline, increasing measured throughput by 35%.'
     ]
   },
   {
     name: 'AI Researcher',
-    company: 'University of New South Wales, Sydney',
-    duration: 'May 2024 - May 2025',
+    company: 'University of New South Wales',
+    duration: 'May 2024 – May 2025',
     location: 'Sydney, Australia',
     description: [
-      'Published a research paper as co-first author on a modular framework for LLM-based human trajectory simulation.',
-      'Implemented 1000+ agents with personality and memory generation, integrating GPT, Llama and custom algorithms.',
-      'Improved inference-driven agent interactions by 31% through spatial analysis and contextual understanding.'
+      'Co-first author of a peer-reviewed publication on a modular framework for LLM-based human trajectory simulation.',
+      'Deployed a 1,000+ concurrent-agent system with memory generation via GPT, LLaMA, and custom algorithms.',
+      'Reduced invalid agent destination selections by 31% using coordinate mapping and a potential-based spatial model.'
     ]
   }
 ]
