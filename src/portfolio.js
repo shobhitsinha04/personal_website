@@ -6,17 +6,14 @@ const header = {
 const about = {
   name: 'Shobhit Sinha',
   description: [
-    'Hi, I\'m Shobhit, a Computer Engineering student at UIUC who enjoys building intelligent, and scalable systems with machine learning.',
+    'I\'m an MEng student in EECS at UC Berkeley and a Computer Engineering graduate from UIUC. I enjoy building intelligent, scalable systems, from low-level infrastructure to the machine learning that runs on top of it.',
     <br />,
     <br />,
-    'I like applying generative and predictive models to problems that span from simulating urban movement with AI agents to understanding long term health patterns.',
-    <br />,
-    <br />,
-    'I\'m always looking to build technology that\'s practical, efficient, and actually makes a difference. Feel free to explore my portfolio to see what I\'ve been working on.'
+    'My work spans research and engineering: publishing on LLM-driven agent simulation, building on-device AI tooling, and designing high-performance backends and data pipelines. I like technology that\'s practical, efficient, and actually makes a difference. Feel free to explore what I\'ve been working on.'
   ],
-  resume: 'https://drive.google.com/file/d/1CB2ttmfFzR7aUPNU8yR_ZQ1v_iCVgl6n/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/14oTJgcrOMfsewHer1f3M-5GJiVb68GL1/view?usp=drive_link',
   social: {
-    linkedin: 'https://www.linkedin.com/in/shobhit-sinha-uiuc/',
+    linkedin: 'https://www.linkedin.com/in/sinha04/',
     github: 'https://github.com/shobhitsinha04',
     googleScholar: 'https://scholar.google.com/citations?user=v0q1vF8AAAAJ&hl=en&authuser=6',
   },

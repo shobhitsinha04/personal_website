@@ -36,17 +36,6 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           </li>
         ) : null}
 
-        {publications.length ? (
-          <li className='nav__list-item'>
-            <button
-              onClick={() => handleNavigation('publications')}
-              className={`link link--nav ${currentPage === 'publications' ? 'link--active' : ''}`}
-            >
-              Publications
-            </button>
-          </li>
-        ) : null}
-
         {projects.length ? (
           <li className='nav__list-item'>
             <button
@@ -54,6 +43,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               className={`link link--nav ${currentPage === 'projects' ? 'link--active' : ''}`}
             >
               Projects
+            </button>
+          </li>
+        ) : null}
+
+        {publications.length ? (
+          <li className='nav__list-item'>
+            <button
+              onClick={() => handleNavigation('publications')}
+              className={`link link--nav ${currentPage === 'publications' ? 'link--active' : ''}`}
+            >
+              Publications
             </button>
           </li>
         ) : null}
