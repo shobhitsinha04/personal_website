@@ -34,28 +34,19 @@
   text-align: left;
 }
 
-.education__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .education__degree {
   font-size: 1.2rem;
   color: #666;
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 0.35rem;
 }
 
 .education__details {
+  margin: 0.35rem 0 0;
   color: #666;
   font-style: italic;
   font-size: 0.95rem;
-  text-align: right;
-  flex-shrink: 0;
+  text-align: left;
 }
 
 .education__duration {
@@ -92,6 +83,11 @@
   color: #444;
 }
 
+.education__coursework-label {
+  font-weight: 600;
+  color: #333;
+}
+
 /* Keep cards light in dark mode, matching the projects cards */
 .dark .education__item {
   background-color: #ffffff !important;
@@ -114,18 +110,6 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-  .education__header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .education__details {
-    text-align: left;
-  }
-}
-
 @media (max-width: 600px) {
   .education__item {
     padding: 1.5rem;

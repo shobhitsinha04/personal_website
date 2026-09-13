@@ -83,7 +83,7 @@ const education = [
     gpa: '3.67',
     honors: 'Dean\'s List  ·  Edmund J. James Scholar',
     coursework:
-      'Coursework spanned machine learning and AI (Applied Machine Learning, Artificial Intelligence, Human-LLM Interaction), the systems that run them (Computer Systems Engineering, Applied Parallel Programming, Digital Systems Laboratory), and the theory beneath it all (Algorithms & Models of Computation, Data Structures, Database Systems, Text Information Systems), rounded out with electives in autonomy, control, and networks (Principles of Safe Autonomy, Control Systems, Social & Information Networks).',
+      'Applied Machine Learning, Artificial Intelligence, Human-LLM Interaction, Computer Systems Engineering, Applied Parallel Programming, Digital Systems Laboratory, Algorithms & Models of Computation, Data Structures, Database Systems, Text Information Systems, Principles of Safe Autonomy, Control Systems, Social & Information Networks.',
   },
 ]
 
