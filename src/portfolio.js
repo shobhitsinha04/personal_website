@@ -144,6 +144,15 @@ const projects = [
     marketplace: 'https://marketplace.visualstudio.com/items?itemName=freshgoldfish.knot-ai',
   },
   {
+    name: 'Battlebot (ECE 445 Senior Design)',
+    description: [
+      'Built a 2 lb antweight combat robot in a team of three, with a custom ESP32 control PCB, 3D-printed chassis, two drive motors, and a brushless spinning weapon controlled wirelessly from an Xbox controller.',
+      'Achieved 75 ms end-to-end wireless latency at 50 Hz, with a firmware watchdog that shuts down all motors within 250 ms of signal loss.'
+    ],
+    stack: ['ESP32', 'Embedded Firmware', 'PCB Design', '3D Printing'],
+    sourceCode: 'https://github.com/shobhitsinha04/battlebot',
+  },
+  {
     name: 'Driver Fatigue Detection System',
     description: [
       'Built a real-time fatigue detection system using Python, OpenCV, and MTCNN, aiming for 90% accuracy.',
