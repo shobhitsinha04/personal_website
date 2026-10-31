@@ -81,7 +81,8 @@
   display: flex;
   gap: 1.4rem;
   overflow-x: auto;
-  padding: 0 0.15rem 1.2rem;
+  overflow-y: hidden;
+  padding: 0.7rem 0.15rem 1.2rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }

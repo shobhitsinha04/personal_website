@@ -90,12 +90,16 @@ const education = [
     track: 'Concentration in Data Science',
     duration: 'Aug. 2026 - May 2027',
     location: 'Berkeley, CA',
+    logo: 'berkeley.png',
+    mark: 'Cal',
   },
   {
     school: 'University of Illinois Urbana-Champaign',
     degree: 'Bachelor of Science (B.S.) in Computer Engineering',
     duration: 'Aug. 2022 - May 2026',
     location: 'Urbana-Champaign, IL',
+    logo: 'uiuc.png',
+    mark: 'UIUC',
     gpa: '3.67',
     honors: 'Dean\'s List  ·  Edmund J. James Scholar',
     coursework:
@@ -111,6 +115,20 @@ const publications = [
     location: 'Sydney, Australia',
     year: '2025',
     month: 'April',
+    summary:
+      'TrajLLM asks a simple question: can large language models stand in for real people when you simulate how a city moves? Each simulated agent is given a personality, a memory, and a daily routine, and the framework then decides where they actually go, from home to work to a park. The generated movement holds up against real mobility patterns, which makes it useful for planning and research without touching anyone\'s real location data.',
+    figures: [
+      {
+        src: 'trajllm-architecture.jpg',
+        caption:
+          'The modular pipeline: it builds a persona and a daily routine, picks each destination with either an LLM or a physical model, and updates the agent\'s memory at every step.',
+      },
+      {
+        src: 'trajllm-simulation.jpg',
+        caption:
+          'A full day simulated for ten Tokyo residents, each one moving between home, work, school and leisure on a live map.',
+      },
+    ],
     description: [
       'Developed a novel modular framework combining Large Language Models with agent-based modeling for realistic human trajectory simulation.',
       'Integrated personality and memory generation capabilities using GPT and Llama models with custom algorithms.',
