@@ -17,7 +17,14 @@ const Logo = ({ src, alt, mark }) => {
 const Education = () => {
   if (!education.length) return null
 
-  const coursework = (education.find((e) => e.coursework) || {}).coursework
+  const courseworkRaw = (education.find((e) => e.coursework) || {}).coursework
+  const courses = courseworkRaw
+    ? courseworkRaw
+        .replace(/\.\s*$/, '')
+        .split(',')
+        .map((c) => c.trim())
+        .filter(Boolean)
+    : []
 
   return (
     <section id='education' className='section detail'>
@@ -59,10 +66,16 @@ const Education = () => {
         ))}
       </div>
 
-      {coursework && (
+      {courses.length > 0 && (
         <div className='edu__coursework'>
           <p className='edu__coursework-label'>Relevant coursework</p>
-          <p className='edu__coursework-text'>{coursework}</p>
+          <ul className='edu__courses'>
+            {courses.map((course, i) => (
+              <li key={i} className='edu__course'>
+                {course}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </section>

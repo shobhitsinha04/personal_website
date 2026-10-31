@@ -24,10 +24,14 @@ const Visual = ({ logo, spec, seed }) => {
   if (spec) {
     return (
       <div className='dblock__visual dblock__visual--spec'>
-        {spec.metric && (
-          <div className='spec__metric'>
-            <span className='spec__value'>{spec.metric.value}</span>
-            <span className='spec__label'>{spec.metric.label}</span>
+        {spec.metrics && spec.metrics.length > 0 && (
+          <div className='spec__stats'>
+            {spec.metrics.map((m, i) => (
+              <div key={i} className='spec__stat'>
+                <span className='spec__value'>{m.value}</span>
+                <span className='spec__label'>{m.label}</span>
+              </div>
+            ))}
           </div>
         )}
         {spec.stack && spec.stack.length > 0 && (

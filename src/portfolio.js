@@ -157,7 +157,11 @@ const publications = [
 const projects = [
   {
     name: 'Custom gRPC Load Balancer',
-    metric: { value: '<1ms', label: 'routing latency' },
+    metrics: [
+      { value: '<1ms', label: 'routing latency' },
+      { value: '~300ms', label: 'failure detection' },
+      { value: '100%', label: 'requests rerouted' },
+    ],
     hook: 'A load balancer I wrote in C++ that routes traffic in under a millisecond and reroutes the instant a server dies.',
     description: [
       'Programmed a multithreaded L7 load balancer in C++ routing gRPC traffic across replicas at sub-millisecond latency.',
@@ -169,7 +173,11 @@ const projects = [
   },
   {
     name: 'Knot AI – On-Device Coding Assistant',
-    metric: { value: '97ms', label: 'p50 retrieval' },
+    metrics: [
+      { value: '97ms', label: 'p50 retrieval' },
+      { value: '168', label: 'automated tests' },
+      { value: '100%', label: 'on-device' },
+    ],
     hook: 'An AI coding assistant that runs fully on your laptop. Private by default, your code never touches the cloud.',
     description: [
       'Built a privacy-first coding assistant with LLM inference running entirely on-device, eliminating reliance on cloud APIs.',
@@ -182,7 +190,11 @@ const projects = [
   },
   {
     name: 'Battlebot (ECE 445 Senior Design)',
-    metric: { value: '75ms', label: 'control latency' },
+    metrics: [
+      { value: '75ms', label: 'control latency' },
+      { value: '50Hz', label: 'update rate' },
+      { value: '2 lb', label: 'antweight class' },
+    ],
     hook: 'A two-pound combat robot with a spinning weapon, driven from an Xbox controller over a custom control board.',
     description: [
       'Built a 2 lb antweight combat robot in a team of three, with a custom ESP32 control PCB, 3D-printed chassis, two drive motors, and a brushless spinning weapon controlled wirelessly from an Xbox controller.',
@@ -193,7 +205,11 @@ const projects = [
   },
   {
     name: 'Driver Fatigue Detection System',
-    metric: { value: '90%', label: 'target accuracy' },
+    metrics: [
+      { value: '90%', label: 'target accuracy' },
+      { value: 'real-time', label: 'CV pipeline' },
+      { value: 'MTCNN', label: 'face detection' },
+    ],
     hook: 'A camera that notices when a driver is nodding off and sounds the alarm before it\'s too late.',
     description: [
       'Built a real-time fatigue detection system using Python, OpenCV, and MTCNN, aiming for 90% accuracy.',
@@ -205,7 +221,11 @@ const projects = [
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
-    metric: { value: '25%', label: 'faster inference' },
+    metrics: [
+      { value: '25%', label: 'faster inference' },
+      { value: '20%', label: 'less train time' },
+      { value: 'from scratch', label: 'transformer build' },
+    ],
     hook: 'A language model built from scratch, to understand what really goes on inside the ones everyone uses.',
     description: [
       'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book',
@@ -218,7 +238,11 @@ const projects = [
   },
   {
     name: 'HealthConnect | Integrated Health Management App',
-    metric: { value: '50M+', label: 'records handled' },
+    metrics: [
+      { value: '50M+', label: 'records handled' },
+      { value: '20+', label: 'API endpoints' },
+      { value: '3,000+', label: 'daily users' },
+    ],
     hook: 'A health app that makes sense of 50 million records to flag risks before they become problems.',
     description: [
       'Deployed a scalable health management platform on GCP, handling 50M+ records through NHANES and Fitbit.',
@@ -230,7 +254,11 @@ const projects = [
   },
   {
     name: 'DocuMine – AI Chrome Extension for Research',
-    metric: { value: '<3s', label: 'answer time' },
+    metrics: [
+      { value: '<3s', label: 'answer time' },
+      { value: '10k+', label: 'chunks embedded' },
+      { value: '200+', label: 'documents' },
+    ],
     hook: 'A Chrome extension that reads your documents and answers questions about them in seconds.',
     description: [
       'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
@@ -242,7 +270,11 @@ const projects = [
   },
   {
     name: 'Sentiment Analysis on Social Media and Reviews',
-    metric: { value: '85%', label: 'accuracy (BERT)' },
+    metrics: [
+      { value: '85%', label: 'accuracy' },
+      { value: 'BERT', label: 'deep model' },
+      { value: '2', label: 'data sources' },
+    ],
     hook: 'Reading the mood of thousands of tweets and reviews to figure out what people actually feel.',
     description: [
       'Conducted sentiment analysis on Amazon reviews and Tweets achieving over 85% accuracy with DeepLearning (BERT).',
@@ -254,7 +286,11 @@ const projects = [
   },
   {
     name: 'Dynamic Reading Companion',
-    metric: { value: '3 APIs', label: 'integrated' },
+    metrics: [
+      { value: '3 APIs', label: 'integrated' },
+      { value: '30%', label: 'better UX' },
+      { value: 'full-stack', label: 'platform' },
+    ],
     hook: 'An app that reads the mood of a book and builds you a Spotify playlist to match it.',
     description: [
       'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
@@ -265,7 +301,11 @@ const projects = [
   },
   {
     name: "FPGA Golf Game",
-    metric: { value: '89%', label: 'BRAM utilization' },
+    metrics: [
+      { value: '89%', label: 'BRAM utilization' },
+      { value: '100%', label: 'functionality' },
+      { value: 'FSM', label: 'game logic' },
+    ],
     hook: 'A playable mini-golf game built straight onto hardware, the graphics and controls and all.',
     description: [
       "Developed a mini golf game on FPGA using SystemVerilog, integrating USB keyboard controls and VGA/HDMI display.",
@@ -278,7 +318,11 @@ const projects = [
   },
   {
     name: "Controlled Home Unit Transportation",
-    metric: { value: '95%', label: 'positioning accuracy' },
+    metrics: [
+      { value: '95%', label: 'positioning accuracy' },
+      { value: '30+', label: 'test scenarios' },
+      { value: 'op-amp', label: 'sensor circuits' },
+    ],
     hook: 'A self-driving chair built from scratch, with sensors and logic to carry people around a home.',
     description: [
       "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
