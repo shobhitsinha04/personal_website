@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div id='top' className={`${themeName} app`}>
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Header currentPage={currentPage} navigate={navigate} />
 
       <main>
         {renderContent()}

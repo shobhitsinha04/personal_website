@@ -8,14 +8,14 @@ import { ThemeContext } from '../../contexts/theme'
 import { experience, education, publications, projects, certifications, about } from '../../portfolio'
 import './Navbar.css'
 
-const Navbar = ({ currentPage, setCurrentPage }) => {
+const Navbar = ({ currentPage, navigate }) => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
   const toggleNavList = () => setShowNavList(!showNavList)
 
   const handleNavigation = (page) => {
-    setCurrentPage(page)
+    navigate(page)
     setShowNavList(false)
   }
 
