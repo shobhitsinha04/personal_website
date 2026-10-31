@@ -35,7 +35,7 @@ const Projects = ({ selectedItem }) => {
               title={project.name}
               hook={project.hook}
               points={project.description}
-              tags={project.stack || []}
+              spec={{ metric: project.metric, stack: project.stack || [] }}
               links={links}
             />
           )

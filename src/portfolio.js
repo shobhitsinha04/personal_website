@@ -23,6 +23,8 @@ const experience = [
   {
     name: 'Applied AI Engineer, Satellite Operations',
     company: 'Satlyt Inc.',
+    logo: 'satlyt.png',
+    mark: 'Satlyt',
     hook: 'Teaching satellites to make their own decisions in orbit, with AI small enough to run on the spacecraft itself.',
     duration: 'Sep. 2026 – Present',
     location: 'Berkeley, CA',
@@ -35,6 +37,8 @@ const experience = [
   {
     name: 'ML Research Assistant',
     company: 'Siebel School of Computing and Data Science',
+    logo: 'siebel.png',
+    mark: 'SCS',
     hook: 'Teaching models to spot the earliest signs of brain health across 10 million clinical records.',
     duration: 'Aug. 2025 – Aug. 2026',
     location: 'Champaign, IL',
@@ -47,6 +51,8 @@ const experience = [
   {
     name: 'Data Science and R&D Intern',
     company: 'CCC Intelligent Solutions',
+    logo: 'ccc.png',
+    mark: 'CCC',
     hook: 'Converting ordinary photos of cars into 3D models accurate enough for a machine to trust.',
     duration: 'Jul. 2025 – Aug. 2025',
     location: 'Chicago, IL',
@@ -59,6 +65,8 @@ const experience = [
   {
     name: 'Software Engineering Intern',
     company: 'HERE Technologies',
+    logo: 'here.png',
+    mark: 'HERE',
     hook: 'Taught a language model to categorize 10,000 places on the map, and it got them right 95% of the time.',
     duration: 'Jan. 2025 – May 2025',
     location: 'Chicago, IL',
@@ -71,6 +79,8 @@ const experience = [
   {
     name: 'AI Researcher',
     company: 'University of New South Wales',
+    logo: 'unsw.png',
+    mark: 'UNSW',
     hook: 'Simulated a thousand AI agents, each with their own memories and personalities, to understand how real crowds move through a city.',
     duration: 'May 2024 – May 2025',
     location: 'Sydney, Australia',
@@ -116,7 +126,7 @@ const publications = [
     year: '2025',
     month: 'April',
     summary:
-      'TrajLLM asks a simple question: can large language models stand in for real people when you simulate how a city moves? Each simulated agent is given a personality, a memory, and a daily routine, and the framework then decides where they actually go, from home to work to a park. The generated movement holds up against real mobility patterns, which makes it useful for planning and research without touching anyone\'s real location data.',
+      'Can large language models stand in for real people when simulating how a city moves? TrajLLM gives each agent a personality, a memory, and a daily routine, then matches their movement to real mobility data, no one\'s actual location required.',
     figures: [
       {
         src: 'trajllm-architecture.jpg',
@@ -147,6 +157,7 @@ const publications = [
 const projects = [
   {
     name: 'Custom gRPC Load Balancer',
+    metric: { value: '<1ms', label: 'routing latency' },
     hook: 'A load balancer I wrote in C++ that routes traffic in under a millisecond and reroutes the instant a server dies.',
     description: [
       'Programmed a multithreaded L7 load balancer in C++ routing gRPC traffic across replicas at sub-millisecond latency.',
@@ -158,6 +169,7 @@ const projects = [
   },
   {
     name: 'Knot AI – On-Device Coding Assistant',
+    metric: { value: '97ms', label: 'p50 retrieval' },
     hook: 'An AI coding assistant that runs fully on your laptop. Private by default, your code never touches the cloud.',
     description: [
       'Built a privacy-first coding assistant with LLM inference running entirely on-device, eliminating reliance on cloud APIs.',
@@ -170,6 +182,7 @@ const projects = [
   },
   {
     name: 'Battlebot (ECE 445 Senior Design)',
+    metric: { value: '75ms', label: 'control latency' },
     hook: 'A two-pound combat robot with a spinning weapon, driven from an Xbox controller over a custom control board.',
     description: [
       'Built a 2 lb antweight combat robot in a team of three, with a custom ESP32 control PCB, 3D-printed chassis, two drive motors, and a brushless spinning weapon controlled wirelessly from an Xbox controller.',
@@ -180,6 +193,7 @@ const projects = [
   },
   {
     name: 'Driver Fatigue Detection System',
+    metric: { value: '90%', label: 'target accuracy' },
     hook: 'A camera that notices when a driver is nodding off and sounds the alarm before it\'s too late.',
     description: [
       'Built a real-time fatigue detection system using Python, OpenCV, and MTCNN, aiming for 90% accuracy.',
@@ -191,6 +205,7 @@ const projects = [
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
+    metric: { value: '25%', label: 'faster inference' },
     hook: 'A language model built from scratch, to understand what really goes on inside the ones everyone uses.',
     description: [
       'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book',
@@ -203,6 +218,7 @@ const projects = [
   },
   {
     name: 'HealthConnect | Integrated Health Management App',
+    metric: { value: '50M+', label: 'records handled' },
     hook: 'A health app that makes sense of 50 million records to flag risks before they become problems.',
     description: [
       'Deployed a scalable health management platform on GCP, handling 50M+ records through NHANES and Fitbit.',
@@ -214,6 +230,7 @@ const projects = [
   },
   {
     name: 'DocuMine – AI Chrome Extension for Research',
+    metric: { value: '<3s', label: 'answer time' },
     hook: 'A Chrome extension that reads your documents and answers questions about them in seconds.',
     description: [
       'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
@@ -225,6 +242,7 @@ const projects = [
   },
   {
     name: 'Sentiment Analysis on Social Media and Reviews',
+    metric: { value: '85%', label: 'accuracy (BERT)' },
     hook: 'Reading the mood of thousands of tweets and reviews to figure out what people actually feel.',
     description: [
       'Conducted sentiment analysis on Amazon reviews and Tweets achieving over 85% accuracy with DeepLearning (BERT).',
@@ -236,6 +254,7 @@ const projects = [
   },
   {
     name: 'Dynamic Reading Companion',
+    metric: { value: '3 APIs', label: 'integrated' },
     hook: 'An app that reads the mood of a book and builds you a Spotify playlist to match it.',
     description: [
       'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
@@ -246,6 +265,7 @@ const projects = [
   },
   {
     name: "FPGA Golf Game",
+    metric: { value: '89%', label: 'BRAM utilization' },
     hook: 'A playable mini-golf game built straight onto hardware, the graphics and controls and all.',
     description: [
       "Developed a mini golf game on FPGA using SystemVerilog, integrating USB keyboard controls and VGA/HDMI display.",
@@ -258,6 +278,7 @@ const projects = [
   },
   {
     name: "Controlled Home Unit Transportation",
+    metric: { value: '95%', label: 'positioning accuracy' },
     hook: 'A self-driving chair built from scratch, with sensors and logic to carry people around a home.',
     description: [
       "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",

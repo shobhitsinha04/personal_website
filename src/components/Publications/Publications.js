@@ -27,6 +27,44 @@ const Publications = () => {
               <p className='pub__venue'>
                 {pub.venue} · {pub.location} · {pub.month} {pub.year}
               </p>
+
+              {pub.links && (
+                <div className='pub__links'>
+                  {pub.links.paper && (
+                    <a
+                      className='pub__link'
+                      href={pub.links.paper}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <LaunchIcon fontSize='small' />
+                      <span>Read paper</span>
+                    </a>
+                  )}
+                  {pub.links.arxiv && (
+                    <a
+                      className='pub__link'
+                      href={pub.links.arxiv}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <LaunchIcon fontSize='small' />
+                      <span>arXiv</span>
+                    </a>
+                  )}
+                  {pub.links.code && (
+                    <a
+                      className='pub__link'
+                      href={pub.links.code}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <GitHubIcon fontSize='small' />
+                      <span>Code</span>
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
 
             {pub.summary && <p className='pub__summary'>{pub.summary}</p>}
@@ -54,44 +92,6 @@ const Publications = () => {
                   <li key={i}>{d}</li>
                 ))}
               </ul>
-            )}
-
-            {pub.links && (
-              <div className='pub__links'>
-                {pub.links.paper && (
-                  <a
-                    className='pub__link'
-                    href={pub.links.paper}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <LaunchIcon fontSize='small' />
-                    <span>Paper</span>
-                  </a>
-                )}
-                {pub.links.arxiv && (
-                  <a
-                    className='pub__link'
-                    href={pub.links.arxiv}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <LaunchIcon fontSize='small' />
-                    <span>arXiv</span>
-                  </a>
-                )}
-                {pub.links.code && (
-                  <a
-                    className='pub__link'
-                    href={pub.links.code}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <GitHubIcon fontSize='small' />
-                    <span>Code</span>
-                  </a>
-                )}
-              </div>
             )}
           </article>
         ))}
