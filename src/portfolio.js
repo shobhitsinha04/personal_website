@@ -173,7 +173,7 @@ const projects = [
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
-    hook: 'I built a language model from scratch to really understand what goes on inside the ones everyone uses.',
+    hook: 'A language model built from scratch, to understand what really goes on inside the ones everyone uses.',
     description: [
       'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book',
       'Optimized training with efficient weight loading and LoRA-based methods, reducing training time by 20%.',
@@ -240,7 +240,7 @@ const projects = [
   },
   {
     name: "Controlled Home Unit Transportation",
-    hook: 'A self-driving chair I built from scratch, with sensors and logic to carry people around a home.',
+    hook: 'A self-driving chair built from scratch, with sensors and logic to carry people around a home.',
     description: [
       "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
       "Implemented transistor control with Boolean logic to enable multi-directional movement.",

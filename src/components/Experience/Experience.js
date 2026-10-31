@@ -29,9 +29,10 @@ const Experience = ({ selectedItem }) => {
             reverse={idx % 2 === 1}
             selected={selectedItem === idx}
             seed={idx + 1}
-            kicker={`${exp.name} · ${exp.company}`}
+            kicker={exp.company}
             date={exp.location ? `${exp.duration} · ${exp.location}` : exp.duration}
-            title={exp.hook}
+            title={exp.name}
+            hook={exp.hook}
             points={exp.description}
           />
         ))}

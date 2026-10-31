@@ -5,7 +5,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import './Carousel.css'
 
-const Carousel = ({ index, title, viewAllLabel, items, onSelect, onViewAll }) => {
+const Carousel = ({ title, viewAllLabel, items, onSelect, onViewAll }) => {
   const trackRef = useRef(null)
 
   const scrollByCards = (dir) => {
@@ -22,7 +22,6 @@ const Carousel = ({ index, title, viewAllLabel, items, onSelect, onViewAll }) =>
     <section className='section carousel'>
       <div className='carousel__head'>
         <div className='carousel__heading'>
-          {index && <p className='carousel__index'>{index} / Work</p>}
           <h2 className='carousel__title'>{title}</h2>
         </div>
         <div className='carousel__controls'>

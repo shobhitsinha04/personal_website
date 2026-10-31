@@ -32,8 +32,8 @@ const Projects = ({ selectedItem }) => {
               reverse={idx % 2 === 1}
               selected={selectedItem === idx}
               seed={idx + 11}
-              kicker={project.name}
-              title={project.hook}
+              title={project.name}
+              hook={project.hook}
               points={project.description}
               tags={project.stack || []}
               links={links}

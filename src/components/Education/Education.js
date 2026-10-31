@@ -7,6 +7,8 @@ import './Education.css';
 const Education = () => {
   if (!education.length) return null;
 
+  const coursework = (education.find((e) => e.coursework) || {}).coursework;
+
   return (
     <section id='education' className='section education'>
       <h2 className='section__title'>Education</h2>
@@ -31,17 +33,16 @@ const Education = () => {
               <p className='education__gpa'>GPA: {edu.gpa} / 4.00</p>
             )}
             {edu.honors && <p className='education__honors'>{edu.honors}</p>}
-            {edu.coursework && (
-              <p className='education__coursework'>
-                <span className='education__coursework-label'>
-                  Relevant coursework:{' '}
-                </span>
-                {edu.coursework}
-              </p>
-            )}
           </div>
         ))}
       </div>
+
+      {coursework && (
+        <div className='education__coursework-box'>
+          <h3 className='education__coursework-title'>Relevant coursework</h3>
+          <p className='education__coursework'>{coursework}</p>
+        </div>
+      )}
     </section>
   );
 };

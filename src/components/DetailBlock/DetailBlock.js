@@ -2,7 +2,7 @@
 import GridArt from '../GridArt/GridArt'
 import './DetailBlock.css'
 
-const DetailBlock = ({ id, reverse, selected, kicker, date, title, points, tags, links, seed }) => (
+const DetailBlock = ({ id, reverse, selected, kicker, date, title, hook, points, tags, links, seed }) => (
   <article
     id={id}
     className={`dblock ${reverse ? 'dblock--reverse' : ''} ${selected ? 'dblock--selected' : ''}`}
@@ -12,12 +12,16 @@ const DetailBlock = ({ id, reverse, selected, kicker, date, title, points, tags,
     </div>
 
     <div className='dblock__body'>
-      <div className='dblock__meta'>
-        <span className='dblock__kicker'>{kicker}</span>
-        {date && <span className='dblock__date'>{date}</span>}
-      </div>
+      {(kicker || date) && (
+        <div className='dblock__meta'>
+          {kicker && <span className='dblock__kicker'>{kicker}</span>}
+          {date && <span className='dblock__date'>{date}</span>}
+        </div>
+      )}
 
       {title && <h3 className='dblock__title'>{title}</h3>}
+
+      {hook && <p className='dblock__hook'>{hook}</p>}
 
       {points && points.length > 0 && (
         <ul className='dblock__points'>

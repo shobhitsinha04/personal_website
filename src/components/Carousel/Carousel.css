@@ -133,9 +133,9 @@
 
 .hcard__hook {
   font-family: var(--font-display);
-  font-size: 1.6rem;
-  line-height: 1.12;
-  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.14;
+  font-weight: 500;
   color: var(--clr-fg-alt);
 }
 
