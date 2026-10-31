@@ -1,67 +1,82 @@
-/* src/components/ProjectContainer/ProjectContainer.css - Fixed white background and clean buttons */
+/* src/components/ProjectContainer/ProjectContainer.css - Cobalt */
 .project {
-  background-color: #ffffff !important; /* Force white background in both themes */
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  color: #333 !important; /* Force dark text in both themes */
+  background-color: var(--color-paper-2);
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-card);
+  padding: 1.6rem 1.8rem;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  color: var(--color-ink-2);
   width: 100%;
-  max-width: none;
+}
+
+@supports (corner-shape: bevel) {
+  .project {
+    border-radius: var(--cut-l) 4px var(--cut-l) 4px;
+    corner-shape: bevel round bevel round;
+  }
 }
 
 .project:hover {
-  transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
+  transform: translateY(-2px);
+  border-color: var(--color-rule-2);
 }
 
 .project h3 {
   text-align: left;
-  color: #333 !important; /* Force dark text */
-  font-weight: bold;
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  font-weight: 600;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
 .project__description {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  list-style-type: disc;
-  color: #333 !important; /* Force dark text */
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-type: none;
   text-align: left;
 }
 
 .project__description li {
+  position: relative;
   margin-bottom: 0.5rem;
-  line-height: 1.6;
-  color: #444 !important; /* Force dark text */
+  line-height: 1.65;
+  color: var(--color-ink-2);
+}
+
+.project__description li::before {
+  content: '';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.65em;
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-accent-2);
 }
 
 .project__stack {
   display: flex;
   flex-wrap: wrap;
-  margin: 1.2em 0;
-  justify-content: center;
+  margin: 1.3em 0;
   gap: 0.5rem;
 }
 
 .project__stack-item {
-  margin: 0.3em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: #333 !important; /* Force dark text */
-  background-color: #f8f9fa; /* Light gray background */
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  border: 1px solid #e9ecef;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--color-ink-2);
+  background-color: var(--color-paper-3);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  border: var(--rule-hair) solid var(--color-rule);
 }
 
-/* Enhanced Links Section */
 .project__links {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -70,32 +85,29 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.7rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
+  padding: 0 1rem;
+  min-height: 42px;
+  border-radius: var(--radius-input);
+  font-family: var(--font-display);
   font-size: 0.9rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
+  font-weight: 500;
   white-space: nowrap;
-  /* Fix button text selection */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
   cursor: pointer;
-  min-width: 120px;
-  justify-content: center;
-  /* Remove any default button styling */
-  background: none;
-  box-shadow: none;
+  color: var(--color-ink);
+  background-color: var(--color-key-face);
+  border: var(--rule-hair) solid var(--color-rule-2);
+  box-shadow: var(--shadow-key);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.project__link:focus {
-  outline: 2px solid #2978b5;
-  outline-offset: 2px;
+.project__link:hover {
+  transform: translateY(-1px);
+}
+
+.project__link:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 1px 2px oklch(24% 0.028 262 / 0.16);
 }
 
 .project__link-icon {
@@ -103,101 +115,19 @@
   flex-shrink: 0;
 }
 
-.project__link-text {
-  font-size: 0.9rem;
-  font-weight: 600;
-  /* Additional text selection fix */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.project__link--github {
-  color: #333;
-  background-color: #f8f9fa;
-  border: 1px solid #d0d7de;
-}
-
-.project__link--github:hover {
-  background-color: #333;
-  color: white;
-  border-color: #333;
-  transform: translateY(-2px);
-  box-shadow: rgba(51, 51, 51, 0.2) 0px 4px 12px;
-}
-
 .project__link--demo {
-  color: #2978b5;
-  background-color: #f8f9fa;
-  border: 1px solid #d0d7de;
-}
-
-.project__link--demo:hover {
-  background-color: #2978b5;
-  color: white;
-  border-color: #2978b5;
-  transform: translateY(-2px);
-  box-shadow: rgba(41, 120, 181, 0.3) 0px 4px 12px;
-}
-
-.project__link:active {
-  transform: translateY(0);
-}
-
-/* Remove all dark mode overrides - keep white background in all themes */
-.dark .project {
-  background-color: #ffffff !important; /* Keep white background in dark mode */
-  border-color: #ddd;
-  color: #333 !important; /* Keep dark text in dark mode */
-}
-
-.dark .project h3 {
-  color: #333 !important; /* Keep dark text in dark mode */
-}
-
-.dark .project__description {
-  color: #333 !important; /* Keep dark text in dark mode */
-}
-
-.dark .project__description li {
-  color: #444 !important; /* Keep dark text in dark mode */
-}
-
-.dark .project__stack-item {
-  background-color: #f8f9fa !important; /* Keep light background in dark mode */
-  border-color: #e9ecef;
-  color: #333 !important; /* Keep dark text in dark mode */
-}
-
-.dark .project__link--github {
-  background-color: #f8f9fa;
-  border-color: #d0d7de;
-  color: #333;
-}
-
-.dark .project__link--github:hover {
-  background-color: #333;
-  color: white;
-}
-
-.dark .project__link--demo {
-  background-color: #f8f9fa;
-  border-color: #d0d7de;
-  color: #2978b5;
+  color: var(--color-accent);
 }
 
 @media (max-width: 600px) {
+  .project {
+    padding: 1.3rem;
+  }
   .project__links {
     flex-direction: column;
-    gap: 0.8rem;
+    align-items: stretch;
   }
-  
   .project__link {
-    min-width: 100%;
-  }
-  
-  .project__stack {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }

@@ -1,28 +1,32 @@
 /* src/components/Header/Header.css */
 .header {
-  height: 8em;
-  max-width: 1100px;
-  width: 95%;
-  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 4.5em;
+  padding: 0 max(5vw, calc((100vw - var(--measure)) / 2 + 1em));
   justify-content: space-between;
+  background-color: color-mix(in oklch, var(--color-paper) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
 }
 
 .header__title {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: var(--tracking-display);
+  color: var(--color-ink);
+  transition: color 0.2s ease;
 }
 
 .header__title:hover {
-  color: var(--clr-primary);
+  color: var(--color-accent);
 }
 
 @media (max-width: 600px) {
   .header {
-    height: 6em;
+    height: 4em;
+    padding: 0 5vw;
   }
 }

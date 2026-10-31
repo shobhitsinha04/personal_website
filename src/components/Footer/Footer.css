@@ -1,28 +1,30 @@
+/* src/components/Footer/Footer.css - Cobalt */
 .footer {
   padding: 3em 0;
   margin-top: 4em;
   text-align: center;
-  background-color: var(--clr-bg); /* Use theme background color */
+  background-color: var(--color-paper);
+  border-top: var(--rule-hair) solid var(--color-rule);
 }
 
 .footer__link {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--clr-fg); /* Use theme text color */
-  transition: color 0.2s ease-in-out;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  transition: color 0.2s ease;
 }
 
 .footer__link:hover {
-  color: var(--clr-primary);
+  color: var(--color-accent);
 }
 
 @media (max-width: 600px) {
   .footer {
-    padding: 2em;
+    padding: 2em 1em;
     margin-top: 3em;
   }
-  
   .footer__link {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }

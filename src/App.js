@@ -1,13 +1,13 @@
-// src/App.js - Make sure all components are imported
-import { useContext, useState } from 'react'
+// src/App.js - single scrolling page
+import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Education from './components/Education/Education'
-import Publications from './components/Publications/Publications' // Make sure this import exists
 import Projects from './components/Projects/Projects'
-import Certifications from './components/Certifications/Certifications' // Make sure this import exists
+import Publications from './components/Publications/Publications'
+import Certifications from './components/Certifications/Certifications'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
@@ -15,32 +15,19 @@ import './App.css'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
-  const [currentPage, setCurrentPage] = useState('home')
-
-  const renderContent = () => {
-    switch(currentPage) {
-      case 'experience':
-        return <Experience />
-      case 'education':
-        return <Education />
-      case 'publications':
-        return <Publications />
-      case 'projects':
-        return <Projects />
-      case 'certifications':
-        return <Certifications />
-      default:
-        return <About />
-    }
-  }
 
   return (
     <div id='top' className={`${themeName} app`}>
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Header />
 
       <main>
-        {renderContent()}
-        {currentPage === 'home' && <Contact />}
+        <About />
+        <Experience />
+        <Education />
+        <Projects />
+        <Publications />
+        <Certifications />
+        <Contact />
       </main>
 
       <ScrollToTop />
