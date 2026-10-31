@@ -2,15 +2,27 @@
 .carousel__head {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 1.4em;
+  margin-bottom: 1rem;
+}
+
+.carousel__index {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-fg);
+  opacity: 0.5;
+  margin-bottom: 0.6rem;
 }
 
 .carousel__title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.05;
   color: var(--clr-fg-alt);
 }
 
@@ -27,7 +39,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(128, 128, 128, 0.28);
+  border: 1px solid var(--explore-line);
   background-color: var(--clr-bg-alt);
   color: var(--clr-fg-alt);
   cursor: pointer;
@@ -45,39 +57,45 @@
   background: none;
   border: 0;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--clr-primary);
   cursor: pointer;
   white-space: nowrap;
-  margin-left: 0.4rem;
+  margin-left: 0.6rem;
+  border-bottom: 1px solid var(--clr-primary);
+  padding-bottom: 2px;
 }
 
-.carousel__viewall:hover,
-.carousel__viewall:focus-visible {
-  text-decoration: underline;
+.carousel__rule {
+  height: 2px;
+  background-color: var(--clr-primary);
+  width: 100%;
+  margin-bottom: 1.8rem;
+  opacity: 0.85;
 }
 
 .carousel__track {
   display: flex;
   gap: 1.4rem;
   overflow-x: auto;
-  padding: 0.5rem 0.2rem 1.2rem;
+  padding: 0 0.15rem 1.2rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
 .hcard {
   scroll-snap-align: start;
-  flex: 0 0 330px;
-  min-width: 330px;
+  flex: 0 0 370px;
+  min-width: 370px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.1rem;
   background-color: var(--clr-bg-alt);
-  border: 1px solid rgba(128, 128, 128, 0.18);
-  border-radius: 14px;
-  padding: 1.6rem;
+  border: 1px solid var(--explore-line);
+  padding: 1.8rem;
   box-shadow: var(--shadow);
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
@@ -87,19 +105,45 @@
   border-color: var(--clr-primary);
 }
 
-.hcard__label {
-  font-size: 0.78rem;
+.hcard__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.hcard__label,
+.hcard__tag {
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.hcard__label {
+  color: var(--clr-fg);
+  opacity: 0.75;
+}
+
+.hcard__tag {
   color: var(--clr-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hcard__hook {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1.12;
+  font-weight: 400;
   color: var(--clr-fg-alt);
+}
+
+.hcard__blurb {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--clr-fg);
+  opacity: 0.85;
   flex-grow: 1;
 }
 
@@ -109,8 +153,10 @@
   border: 0;
   padding: 0;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   color: var(--clr-primary);
   cursor: pointer;
 }
@@ -122,10 +168,14 @@
 
 @media (max-width: 600px) {
   .carousel__title {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .hcard {
-    flex-basis: 82vw;
-    min-width: 82vw;
+    flex-basis: 85vw;
+    min-width: 85vw;
+    padding: 1.4rem;
+  }
+  .hcard__hook {
+    font-size: 1.4rem;
   }
 }

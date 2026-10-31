@@ -3,6 +3,8 @@
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-mono: 'Poppins', ui-monospace, monospace;
 }
 
 .light {
@@ -12,6 +14,8 @@
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --explore-line: rgba(0, 0, 0, 0.12);
+  --explore-hover: rgba(0, 0, 0, 0.03);
 }
 
 .dark {
@@ -22,6 +26,8 @@
   --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --explore-line: rgba(255, 255, 255, 0.13);
+  --explore-hover: rgba(255, 255, 255, 0.04);
 }
 
 main {
