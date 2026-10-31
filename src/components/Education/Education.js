@@ -69,13 +69,7 @@ const Education = () => {
       {courses.length > 0 && (
         <div className='edu__coursework'>
           <p className='edu__coursework-label'>Relevant coursework</p>
-          <ul className='edu__courses'>
-            {courses.map((course, i) => (
-              <li key={i} className='edu__course'>
-                {course}
-              </li>
-            ))}
-          </ul>
+          <p className='edu__coursework-text'>{courses.join('   ·   ')}</p>
         </div>
       )}
     </section>

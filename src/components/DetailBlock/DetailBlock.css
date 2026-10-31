@@ -203,6 +203,7 @@
   height: auto;
   min-height: 230px;
   padding: 1.6rem 1.8rem;
+  background-color: transparent;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -262,7 +263,7 @@
   letter-spacing: 0.03em;
   color: var(--clr-primary);
   border: 1px solid var(--explore-line);
-  background-color: var(--clr-bg);
+  background-color: var(--explore-hover);
   padding: 0.22rem 0.55rem;
 }
 
