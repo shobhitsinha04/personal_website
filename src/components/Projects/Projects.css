@@ -20,3 +20,13 @@
   color: #444; /* Change to your desired color */
 }
 
+.project-wrap {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.project-wrap--selected .project {
+  border-color: var(--clr-primary) !important;
+  box-shadow: 0 0 0 2px var(--clr-primary), rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+}
+

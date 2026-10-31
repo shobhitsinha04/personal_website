@@ -1,0 +1,51 @@
+/* src/components/ExploreOverview/ExploreOverview.css */
+.explore__kicker {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-fg);
+  opacity: 0.65;
+  margin-bottom: 0.6rem;
+}
+
+.explore__list {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.22);
+}
+
+.explore__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.15rem 0.3rem;
+  background: none;
+  border: 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.22);
+  font-family: inherit;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: var(--clr-fg-alt);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+}
+
+.explore__link:hover,
+.explore__link:focus-visible {
+  color: var(--clr-primary);
+  padding-left: 1.1rem;
+}
+
+.explore__arrow {
+  color: var(--clr-primary);
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .explore__link {
+    padding: 0.9rem 0.2rem;
+  }
+}

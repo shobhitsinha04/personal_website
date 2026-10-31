@@ -26,6 +26,11 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
 }
 
+.experience__item--selected {
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 2px var(--clr-primary), rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 .experience__role {
   font-size: 1.5rem;
   font-weight: bold;

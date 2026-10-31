@@ -23,6 +23,7 @@ const experience = [
   {
     name: 'Applied AI Engineer, Satellite Operations',
     company: 'Satlyt Inc.',
+    hook: 'Teaching satellites to make their own decisions in orbit, with AI small enough to run on the spacecraft itself.',
     duration: 'Sep. 2026 – Present',
     location: 'Berkeley, CA',
     description: [
@@ -34,6 +35,7 @@ const experience = [
   {
     name: 'ML Research Assistant',
     company: 'Siebel School of Computing and Data Science',
+    hook: 'Teaching models to spot the earliest signs of brain health across 10 million clinical records.',
     duration: 'Aug. 2025 – Aug. 2026',
     location: 'Champaign, IL',
     description: [
@@ -45,6 +47,7 @@ const experience = [
   {
     name: 'Data Science and R&D Intern',
     company: 'CCC Intelligent Solutions',
+    hook: 'Converting ordinary photos of cars into 3D models accurate enough for a machine to trust.',
     duration: 'Jul. 2025 – Aug. 2025',
     location: 'Chicago, IL',
     description: [
@@ -56,6 +59,7 @@ const experience = [
   {
     name: 'Software Engineering Intern',
     company: 'HERE Technologies',
+    hook: 'Taught a language model to categorize 10,000 places on the map, and it got them right 95% of the time.',
     duration: 'Jan. 2025 – May 2025',
     location: 'Chicago, IL',
     description: [
@@ -67,6 +71,7 @@ const experience = [
   {
     name: 'AI Researcher',
     company: 'University of New South Wales',
+    hook: 'Simulated a thousand AI agents, each with their own memories and personalities, to understand how real crowds move through a city.',
     duration: 'May 2024 – May 2025',
     location: 'Sydney, Australia',
     description: [
@@ -124,6 +129,7 @@ const publications = [
 const projects = [
   {
     name: 'Custom gRPC Load Balancer',
+    hook: 'A load balancer I wrote in C++ that routes traffic in under a millisecond and reroutes the instant a server dies.',
     description: [
       'Programmed a multithreaded L7 load balancer in C++ routing gRPC traffic across replicas at sub-millisecond latency.',
       'Implemented the gRPC health-checking protocol, detecting failed backends in ~300 ms and rerouting 100% of requests.',
@@ -134,6 +140,7 @@ const projects = [
   },
   {
     name: 'Knot AI – On-Device Coding Assistant',
+    hook: 'An AI coding assistant that runs fully on your laptop. Private by default, your code never touches the cloud.',
     description: [
       'Built a privacy-first coding assistant with LLM inference running entirely on-device, eliminating reliance on cloud APIs.',
       'Structured a RAG pipeline with embeddings and reranking over local codebases, achieving 97 ms p50 retrieval latency.',
@@ -145,6 +152,7 @@ const projects = [
   },
   {
     name: 'Battlebot (ECE 445 Senior Design)',
+    hook: 'A two-pound combat robot with a spinning weapon, driven from an Xbox controller over a custom control board.',
     description: [
       'Built a 2 lb antweight combat robot in a team of three, with a custom ESP32 control PCB, 3D-printed chassis, two drive motors, and a brushless spinning weapon controlled wirelessly from an Xbox controller.',
       'Achieved 75 ms end-to-end wireless latency at 50 Hz, with a firmware watchdog that shuts down all motors within 250 ms of signal loss.'
@@ -154,6 +162,7 @@ const projects = [
   },
   {
     name: 'Driver Fatigue Detection System',
+    hook: 'A camera that notices when a driver is nodding off and sounds the alarm before it\'s too late.',
     description: [
       'Built a real-time fatigue detection system using Python, OpenCV, and MTCNN, aiming for 90% accuracy.',
       'Trained a custom Deep Learning model in PyTorch for fatigue detection, improving prediction reliability.',
@@ -164,6 +173,7 @@ const projects = [
   },
   {
     name: 'Building and Fine-Tuning a Large Language Model (LLM)',
+    hook: 'I built a language model from scratch to really understand what goes on inside the ones everyone uses.',
     description: [
       'Built and fine-tuned a transformer-based LLM using PyTorch, applying techniques from Sebastian Raschka\'s book',
       'Optimized training with efficient weight loading and LoRA-based methods, reducing training time by 20%.',
@@ -175,6 +185,7 @@ const projects = [
   },
   {
     name: 'HealthConnect | Integrated Health Management App',
+    hook: 'A health app that makes sense of 50 million records to flag risks before they become problems.',
     description: [
       'Deployed a scalable health management platform on GCP, handling 50M+ records through NHANES and Fitbit.',
       'Streamlined 20+ secure Node.js API endpoints for real-time interaction, supporting 3,000+ daily users.',
@@ -185,6 +196,7 @@ const projects = [
   },
   {
     name: 'DocuMine – AI Chrome Extension for Research',
+    hook: 'A Chrome extension that reads your documents and answers questions about them in seconds.',
     description: [
       'Programmed a Chrome Extension enabling RAG-powered Q&A, delivering context-aware answers in under 3 secs.',
       'Processed 200+ documents, embedding 10,000+ chunks into ChromaDB, boosting retrieval speed by 35%.',
@@ -195,6 +207,7 @@ const projects = [
   },
   {
     name: 'Sentiment Analysis on Social Media and Reviews',
+    hook: 'Reading the mood of thousands of tweets and reviews to figure out what people actually feel.',
     description: [
       'Conducted sentiment analysis on Amazon reviews and Tweets achieving over 85% accuracy with DeepLearning (BERT).',
       'Applied NLP preprocessing techniques, including tokenization and embedding, to improve model performance.',
@@ -205,6 +218,7 @@ const projects = [
   },
   {
     name: 'Dynamic Reading Companion',
+    hook: 'An app that reads the mood of a book and builds you a Spotify playlist to match it.',
     description: [
       'Engineered a full-stack platform utilizing LLMs for automated text summarization and sentiment analysis, generating personalized Spotify playlists via Gutendex API integration.',
       'Optimized user experience by 30% through emotion-driven playlist adjustments.',
@@ -214,6 +228,7 @@ const projects = [
   },
   {
     name: "FPGA Golf Game",
+    hook: 'A playable mini-golf game built straight onto hardware, the graphics and controls and all.',
     description: [
       "Developed a mini golf game on FPGA using SystemVerilog, integrating USB keyboard controls and VGA/HDMI display.",
       "Optimized BRAM usage to 89% for efficient graphics storage and utilized a MicroBlaze processor for SoC integration.",
@@ -225,6 +240,7 @@ const projects = [
   },
   {
     name: "Controlled Home Unit Transportation",
+    hook: 'A self-driving chair I built from scratch, with sensors and logic to carry people around a home.',
     description: [
       "Designed an automated chair for the project with custom logic, achieving 95% positioning accuracy.",
       "Implemented transistor control with Boolean logic to enable multi-directional movement.",
