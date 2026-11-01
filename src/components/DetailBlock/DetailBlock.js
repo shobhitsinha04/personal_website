@@ -3,20 +3,29 @@ import { useState } from 'react'
 import GridArt from '../GridArt/GridArt'
 import './DetailBlock.css'
 
-const Logo = ({ src, alt, mark }) => {
+const Logo = ({ src, srcDark, alt, mark }) => {
   const [ok, setOk] = useState(Boolean(src))
-  return ok ? (
-    <img className='dblock__logo-img' src={src} alt={alt} onError={() => setOk(false)} />
-  ) : (
-    <span className='dblock__monogram'>{mark}</span>
+  if (!ok) return <span className='dblock__monogram'>{mark}</span>
+  return (
+    <>
+      <img
+        className='dblock__logo-img dblock__logo-img--light'
+        src={src}
+        alt={alt}
+        onError={() => setOk(false)}
+      />
+      {srcDark && (
+        <img className='dblock__logo-img dblock__logo-img--dark' src={srcDark} alt={alt} />
+      )}
+    </>
   )
 }
 
 const Visual = ({ logo, spec, seed }) => {
   if (logo) {
     return (
-      <div className='dblock__visual dblock__visual--logo'>
-        <Logo src={logo.src} alt={logo.alt} mark={logo.mark} />
+      <div className={`dblock__visual dblock__visual--logo ${logo.srcDark ? 'has-dark-logo' : ''}`}>
+        <Logo src={logo.src} srcDark={logo.srcDark} alt={logo.alt} mark={logo.mark} />
       </div>
     )
   }

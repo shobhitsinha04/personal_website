@@ -38,6 +38,7 @@ const Experience = ({ selectedItem }) => {
             points={exp.description}
             logo={{
               src: exp.logo ? `${base}/images/logos/${exp.logo}` : null,
+              srcDark: exp.logoDark ? `${base}/images/logos/${exp.logoDark}` : null,
               alt: exp.company,
               mark: exp.mark,
             }}

@@ -5,12 +5,21 @@ import './Education.css'
 
 const base = process.env.PUBLIC_URL || ''
 
-const Logo = ({ src, alt, mark }) => {
+const Logo = ({ src, srcDark, alt, mark }) => {
   const [ok, setOk] = useState(Boolean(src))
-  return ok ? (
-    <img src={src} alt={alt} onError={() => setOk(false)} />
-  ) : (
-    <span className='edu__monogram'>{mark}</span>
+  if (!ok) return <span className='edu__monogram'>{mark}</span>
+  return (
+    <>
+      <img
+        className='edu__logo-img edu__logo-img--light'
+        src={src}
+        alt={alt}
+        onError={() => setOk(false)}
+      />
+      {srcDark && (
+        <img className='edu__logo-img edu__logo-img--dark' src={srcDark} alt={alt} />
+      )}
+    </>
   )
 }
 
@@ -36,9 +45,10 @@ const Education = () => {
       <div className='detail__blocks'>
         {education.map((edu, idx) => (
           <article key={idx} className='edu'>
-            <div className='edu__logo'>
+            <div className={`edu__logo ${edu.logoDark ? 'has-dark-logo' : ''}`}>
               <Logo
                 src={edu.logo ? `${base}/images/logos/${edu.logo}` : null}
+                srcDark={edu.logoDark ? `${base}/images/logos/${edu.logoDark}` : null}
                 alt={edu.school}
                 mark={edu.mark}
               />

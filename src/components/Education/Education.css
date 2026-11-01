@@ -118,8 +118,21 @@
   max-width: 80ch;
 }
 
-/* Dark mode: dark-ink school logos need a light chip or they vanish on navy */
-.dark .edu__logo {
+/* Show the right logo variant per theme */
+.edu__logo-img--dark {
+  display: none;
+}
+
+.dark .edu__logo.has-dark-logo .edu__logo-img--light {
+  display: none;
+}
+
+.dark .edu__logo.has-dark-logo .edu__logo-img--dark {
+  display: block;
+}
+
+/* Dark mode: logos without a dark variant get a light chip so they don't vanish on navy */
+.dark .edu__logo:not(.has-dark-logo) {
   background-color: #ffffff;
   padding: 1.1rem;
 }
