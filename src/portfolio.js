@@ -65,7 +65,7 @@ const experience = [
   {
     name: 'Software Engineering Intern',
     company: 'HERE Technologies',
-    logo: 'here.png',
+    logo: 'here.svg',
     mark: 'HERE',
     hook: 'Taught a language model to categorize 10,000 places on the map, and it got them right 95% of the time.',
     duration: 'Jan. 2025 – May 2025',
