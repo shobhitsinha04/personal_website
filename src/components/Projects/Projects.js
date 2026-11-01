@@ -1,19 +1,45 @@
-import uniqid from 'uniqid'
+import React, { useEffect } from 'react'
 import { projects } from '../../portfolio'
-import ProjectContainer from '../ProjectContainer/ProjectContainer'
+import DetailBlock from '../DetailBlock/DetailBlock'
 import './Projects.css'
 
-const Projects = () => {
+const Projects = ({ selectedItem }) => {
+  useEffect(() => {
+    if (selectedItem != null) {
+      const el = document.getElementById(`project-item-${selectedItem}`)
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }, [selectedItem])
+
   if (!projects.length) return null
 
   return (
-    <section id='projects' className='section projects'>
-      <h2 className='section__title'>Projects</h2>
+    <section id='projects' className='section detail'>
+      <header className='detail__header'>
+        <p className='detail__kicker'>Things I've built</p>
+        <h2 className='detail__title'>Projects</h2>
+      </header>
 
-      <div className='projects__grid'>
-        {projects.map((project) => (
-          <ProjectContainer key={uniqid()} project={project} />
-        ))}
+      <div className='detail__blocks'>
+        {projects.map((project, idx) => {
+          const links = []
+          if (project.sourceCode) links.push({ label: 'View code', href: project.sourceCode })
+          if (project.marketplace) links.push({ label: 'Marketplace', href: project.marketplace })
+          return (
+            <DetailBlock
+              key={idx}
+              id={`project-item-${idx}`}
+              reverse={idx % 2 === 1}
+              selected={selectedItem === idx}
+              seed={idx + 11}
+              title={project.name}
+              hook={project.hook}
+              points={project.description}
+              spec={{ metrics: project.metrics || [], stack: project.stack || [] }}
+              links={links}
+            />
+          )
+        })}
       </div>
     </section>
   )

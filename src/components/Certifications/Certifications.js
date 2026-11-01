@@ -10,8 +10,11 @@ const Certifications = () => {
   if (!certifications.length) return null;
 
   return (
-    <section id='certifications' className='section certifications'>
-      <h2 className='section__title'>Certifications & Courses</h2>
+    <section id='certifications' className='section detail certifications'>
+      <header className='detail__header'>
+        <p className='detail__kicker'>Learning</p>
+        <h2 className='detail__title'>Certifications &amp; Courses</h2>
+      </header>
       <div className='certifications__list'>
         {certifications.map((cert) => (
           <div key={uniqid()} className='certification__item'>
