@@ -67,7 +67,7 @@ const About = () => {
 
       <div className='about__visual'>
         <div className='about__portrait'>
-          <img src={`${base}/images/portrait.jpeg`} alt={name} />
+          <img src={`${base}/images/portrait2.jpg`} alt={name} />
         </div>
       </div>
     </div>
