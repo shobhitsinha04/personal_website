@@ -2,7 +2,7 @@
 .about {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
+  align-items: start;
   gap: 2.5rem;
   min-height: 78vh;
   margin-top: 1.5em;
