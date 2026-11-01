@@ -124,7 +124,7 @@ const DetailBlock = ({
               rel='noopener noreferrer'
               className='dblock__link'
             >
-              {l.label} &#8599;
+              {l.label} &#8599;&#xFE0E;
             </a>
           ))}
         </div>

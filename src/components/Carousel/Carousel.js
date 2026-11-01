@@ -42,7 +42,7 @@ const Carousel = ({ title, viewAllLabel, items, onSelect, onViewAll }) => {
             <ChevronRightIcon />
           </button>
           <button type='button' className='carousel__viewall' onClick={onViewAll}>
-            {viewAllLabel} &rarr;
+            {viewAllLabel} &rarr;&#xFE0E;
           </button>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Carousel = ({ title, viewAllLabel, items, onSelect, onViewAll }) => {
               className='hcard__more'
               onClick={() => onSelect(it.index)}
             >
-              Find out more &rarr;
+              Find out more &rarr;&#xFE0E;
             </button>
           </article>
         ))}

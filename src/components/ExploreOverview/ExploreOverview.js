@@ -19,7 +19,7 @@ const ExploreOverview = ({ navigate }) => {
             <button className='explore__row' onClick={() => navigate(s.page)}>
               <span className='explore__label'>{s.label}</span>
               <span className='explore__desc'>{s.desc}</span>
-              <span className='explore__arrow' aria-hidden='true'>&#8599;</span>
+              <span className='explore__arrow' aria-hidden='true'>&#8599;&#xFE0E;</span>
             </button>
           </li>
         ))}
