@@ -8,26 +8,11 @@ const ThemeProvider = ({ children }) => {
   const [themeName, setThemeName] = useState('light')
 
   useEffect(() => {
-    // Check for saved theme preference or default to system preference
+    // Default to light; only honor an explicit choice the visitor saved via the toggle.
     const savedTheme = localStorage.getItem('themeName')
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    
-    if (savedTheme) {
+    if (savedTheme === 'dark' || savedTheme === 'light') {
       setThemeName(savedTheme)
-    } else {
-      setThemeName(darkMediaQuery.matches ? 'dark' : 'light')
     }
-
-    // Listen for system theme changes
-    const handleChange = (e) => {
-      if (!localStorage.getItem('themeName')) {
-        setThemeName(e.matches ? 'dark' : 'light')
-      }
-    }
-
-    darkMediaQuery.addEventListener('change', handleChange)
-    
-    return () => darkMediaQuery.removeEventListener('change', handleChange)
   }, [])
 
   const toggleTheme = () => {
