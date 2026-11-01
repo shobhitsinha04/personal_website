@@ -12,19 +12,19 @@
 }
 
 .edu__logo {
-  flex: 0 0 170px;
-  height: 130px;
+  flex: 0 0 190px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--explore-line);
-  background-color: #ffffff;
-  padding: 1.1rem;
+  background-color: transparent;
+  padding: 0.7rem;
 }
 
 .edu__logo img {
-  max-width: 88%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 92%;
   object-fit: contain;
 }
 
@@ -116,6 +116,11 @@
   color: var(--clr-fg);
   opacity: 0.9;
   max-width: 80ch;
+}
+
+/* Dark mode: dark-ink school logos need a light chip or they vanish on navy */
+.dark .edu__logo {
+  background-color: #ffffff;
 }
 
 @media (max-width: 820px) {

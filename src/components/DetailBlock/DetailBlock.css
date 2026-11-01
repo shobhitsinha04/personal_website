@@ -177,14 +177,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.8rem;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: transparent;
 }
 
 .dblock__logo-img {
-  max-width: 86%;
-  max-height: 76%;
+  max-width: 94%;
+  max-height: 88%;
   object-fit: contain;
+}
+
+/* Dark mode: dark-ink logos need a light chip or they vanish on navy */
+.dark .dblock__visual--logo {
+  background-color: #ffffff;
 }
 
 .dblock__monogram {
