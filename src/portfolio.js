@@ -41,7 +41,7 @@ const experience = [
     logo: 'siebel.png',
     logoDark: 'siebel-dark.png',
     mark: 'SCS',
-    hook: 'Spotting the earliest signs of brain health across 10 million clinical records.',
+    hook: 'Predicting brain health from 10 million clinical records, long before the symptoms show.',
     duration: 'Aug. 2025 – Aug. 2026',
     location: 'Champaign, IL',
     description: [
