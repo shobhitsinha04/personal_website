@@ -12,19 +12,19 @@
 }
 
 .edu__logo {
-  flex: 0 0 190px;
-  height: 150px;
+  flex: 0 0 260px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--explore-line);
+  border: 0;
   background-color: transparent;
-  padding: 0.7rem;
+  padding: 0.2rem;
 }
 
 .edu__logo img {
   max-width: 100%;
-  max-height: 92%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -121,6 +121,7 @@
 /* Dark mode: dark-ink school logos need a light chip or they vanish on navy */
 .dark .edu__logo {
   background-color: #ffffff;
+  padding: 1.1rem;
 }
 
 @media (max-width: 820px) {

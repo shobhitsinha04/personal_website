@@ -179,6 +179,7 @@
   justify-content: center;
   padding: 1rem;
   background-color: transparent;
+  border: 0;
 }
 
 .dblock__logo-img {
@@ -190,6 +191,7 @@
 /* Dark mode: dark-ink logos need a light chip or they vanish on navy */
 .dark .dblock__visual--logo {
   background-color: #ffffff;
+  padding: 1.6rem;
 }
 
 .dblock__monogram {
