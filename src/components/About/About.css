@@ -67,6 +67,36 @@
   justify-content: center;
 }
 
+.about__portrait {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin-left: auto;
+}
+
+.about__portrait::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  bottom: -16px;
+  width: 62%;
+  height: 62%;
+  background-color: var(--clr-primary);
+  opacity: 0.14;
+  z-index: 0;
+}
+
+.about__portrait img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border: 1px solid var(--explore-line);
+}
+
 @media (max-width: 860px) {
   .about {
     grid-template-columns: 1fr;
@@ -94,13 +124,14 @@
     order: 1;
   }
 
-  .orbit {
+  .about__portrait {
     max-width: 260px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
-  .orbit {
-    max-width: 210px;
+  .about__portrait {
+    max-width: 220px;
   }
 }

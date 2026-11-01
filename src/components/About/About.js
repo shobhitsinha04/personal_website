@@ -2,8 +2,9 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { SiGooglescholar } from 'react-icons/si'
 import { about } from '../../portfolio'
-import Orbit from '../Orbit/Orbit'
 import './About.css'
+
+const base = process.env.PUBLIC_URL || ''
 
 const About = () => {
   const { name, role, description, resume, social } = about
@@ -65,7 +66,9 @@ const About = () => {
       </div>
 
       <div className='about__visual'>
-        <Orbit />
+        <div className='about__portrait'>
+          <img src={`${base}/images/portrait.jpg`} alt={name} />
+        </div>
       </div>
     </div>
   )
