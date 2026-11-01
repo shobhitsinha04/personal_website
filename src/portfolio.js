@@ -41,7 +41,7 @@ const experience = [
     logo: 'siebel.png',
     logoDark: 'siebel-dark.png',
     mark: 'SCS',
-    hook: 'Teaching models to spot the earliest signs of brain health across 10 million clinical records.',
+    hook: 'Spotting the earliest signs of brain health across 10 million clinical records.',
     duration: 'Aug. 2025 – Aug. 2026',
     location: 'Champaign, IL',
     description: [
@@ -353,7 +353,7 @@ const certifications = [
     name: 'Deep Neural Networks with PyTorch',
     issuer: 'IBM (Coursera)',
     date: 'July 2024',
-    verifyLink: 'https://www.coursera.org/account/accomplishments/verify/BUX22BQFA6CM',
+    verifyLink: 'https://www.credly.com/badges/309ca47a-005f-4375-821a-17d57abe7085/print',
     certificateLink: 'https://drive.google.com/file/d/1wvKcj0qfguzSGfOw8w0I7GhynvHBeWu9/view?usp=sharing'
   },
   {
