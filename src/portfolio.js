@@ -11,7 +11,7 @@ const about = {
     <br />,
     'My work spans research and engineering: publishing on LLM-driven agent simulation, building on-device AI tooling, and designing high-performance backends and data pipelines. I like technology that\'s practical, efficient, and actually makes a difference. Feel free to explore what I\'ve been working on.'
   ],
-  resume: 'https://drive.google.com/file/d/14oTJgcrOMfsewHer1f3M-5GJiVb68GL1/view?usp=drive_link',
+  resume: 'https://drive.google.com/file/d/1E-JhAiTjLNs3ItToEopSVOnjjXY9IwTJ/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/sinha04/',
     github: 'https://github.com/shobhitsinha04',
